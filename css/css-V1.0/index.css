@@ -107,7 +107,7 @@ input[type = "radio"]:checked + label span {
 	color: #76b900
 }
 
-h4, .text-color-quantity {
+h4, .text-color-quantity, .name-product, .name-price {
 	color: #67b900 !important
 }
 
@@ -149,6 +149,19 @@ h4, .text-color-quantity {
 	0 0 3px rgba(0,0,0,0) inset,
 	0 1px 1px 1px rgba(0,255,255,.5),
 	0 -1px 1px 1px rgba(0,255,255,.5);
+}
+
+/*basket*/
+#text-basket-header {
+	font-size: 1.35rem;
+	color: #FF0000;
+}
+
+.name-product, .name-price {
+	font-size: 1.05rem;
+}
+
+#basket-name-product-and-price {
 }
 
 @media screen and (max-width: 768px) {
