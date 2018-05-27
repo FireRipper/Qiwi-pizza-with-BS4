@@ -1,0 +1,24 @@
+#contentaboutme, .widhttext1 {
+    float: right;
+}
+
+#contentaboutme {
+    width: 980px;
+    height: 100%;
+    margin: 10px 15px 10px 5px;
+    padding: 15px 15px ;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.widhttext1 {
+    width: 970px;
+    margin: 0 15px;
+}
+
+.widhttext1 h2 {
+    color: #003f48;
+    margin: 5px;
+    padding: 5px;
+    font-size: 48px;
+}

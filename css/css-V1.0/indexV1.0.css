@@ -1,0 +1,210 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* header */
+
+.for-header-navbar {
+	border-bottom: 1px solid #3BFF60; 
+	box-shadow: 0 1px 3px rgba(59,255,96,0.62), 0 1px 2px rgba(59,255,96, 1.24); 
+	border-bottom-right-radius: 10px; 
+	border-bottom-left-radius: 10px;
+}
+
+.navbar-nav a {
+	border: 2px solid #3bff60;
+	border-radius: 10px;
+	color: #3bff60 !important;
+	font-weight: bold;
+}
+
+.navbar-nav a:hover {
+	background-color: #3bff60;
+	color: #fff !important;
+}
+
+.navbar-nav a:active {
+	box-shadow: 0 1px 3px rgba(59,255,96,0.62), 0 1px 2px rgba(59,255,96, 1.24)
+}
+
+.callback-text {
+	padding-left: 8px;
+    list-style-type: none;
+    color: #3bff60;
+    font-size: 17px;
+}
+
+/* second screen "content" */
+
+#menu-on-content a {
+	color: #3bff60;
+}
+
+.nav-tabs .nav-link.active {
+	border-color: #3bff60 #3bff60 !important;
+	background: #3bff60;
+	color: #fff !important;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) ;
+}
+
+.nav-link:hover {
+	border-color: #3bff60 #3bff60 !important
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #3bff60
+}
+
+.price-on-card {
+	background: #fff;
+	font-size: 20px;
+    color: #3bff60;
+}
+
+input[type="radio"] {
+    display:none
+}
+
+input[type="radio"] + label { 
+    cursor: pointer
+}
+
+input[type = "radio"] + label span {
+    display:inline-block;
+    height: 22px;
+    width: 20px;
+    vertical-align:middle;
+    background:url(../../img/radiobtn-all.png) no-repeat;
+    cursor:pointer;
+}
+
+input[type = "radio"]:hover + label span {
+    background:url(../../img/radiobtn-all.png) -19px no-repeat;
+    transition: all 0.20s ease;
+}
+
+input[type = "radio"]:checked + label span {
+    background:url(../../img/radiobtn-all.png) -38px no-repeat;
+    transition: all 0.20s ease;
+}
+
+.form-radbtn {
+	border-radius: 10px
+}
+
+.border-light-green-color {
+	border: 1px solid #76b900
+}
+
+.form-radbtn legend {
+	font-size: 18px;
+	color: #76b900
+}
+
+h4, .text-color-quantity {
+	color: #67b900 !important
+}
+
+.btn {
+	width: 100% !important;
+}
+
+.quantity-product {
+	vertical-align: middle;
+	margin: 0 5px;
+	width: 30px;
+	border-radius: 5px;
+    border: 1px solid #3bff60;
+    color: #00b723;
+}
+
+.btn-minus-quantity, .btn-plus-quantity {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: bold;
+	color: #fff;
+    background-color: #3bff60;
+	cursor: pointer;
+	width: 1.6rem;
+	border-radius: 50%; 
+}
+
+.plus:hover:not(:active) {
+	color: #5E39FF;
+	box-shadow:
+	0 0 3px rgba(0,0,0,0) inset,
+	0 1px 1px 1px rgba(0,255,255,.5),
+	0 -1px 1px 1px rgba(0,255,255,.5);
+}
+
+.minus:hover:not(:active) {
+	color: #5E39FF;
+	box-shadow:
+	0 0 3px rgba(0,0,0,0) inset,
+	0 1px 1px 1px rgba(0,255,255,.5),
+	0 -1px 1px 1px rgba(0,255,255,.5);
+}
+
+@media screen and (max-width: 768px) {
+	h5 {
+		font-size: 1rem !important;
+		word-wrap: break-word;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	h4 {
+		font-size: 0.95rem !important;
+	}
+	.img-pizza {
+		padding: 2px !important;
+	}
+	.img-pizza img {
+		height: 2.2rem;
+	}
+	.price-on-card {
+		margin: 0 !important;
+		font-size: 0.85rem;
+	}
+	.composition-product {
+		font-size: 0.55rem;
+	}
+	.form-radbtn legend {
+		font-size: 0.55rem;
+	}
+	.form label {
+		font-size: 0.65rem;
+	}
+	h5 {
+		font-size: 0.75rem !important;
+		word-wrap: break-word;
+	}
+	.btn-minus-quantity, .btn-plus-quantity {
+		width: 1.5rem !important;
+		margin: 0.1rem;
+	}
+	.btn {
+		font-size: 0.65rem;
+		word-wrap: break-word !important;
+		white-space: pre-wrap;
+	}
+}
+
+/* footer */
+
+#footer {
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px; 
+  background-color: #3BFF60; 
+  color: #fff; 
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}

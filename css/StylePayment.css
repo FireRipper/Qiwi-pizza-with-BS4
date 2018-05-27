@@ -1,0 +1,39 @@
+#contentpayment, .widhttext1 {
+    float: right;
+    width: 980px;
+}
+
+#contentpayment {
+    height: 100%;
+    margin: 10px 15px 10px 5px;
+    padding: 0 15px ;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.imgdicl {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 100%;
+}
+
+#contentpayment p {
+    margin: 1em 0;
+}
+
+.widhttext1 {
+    margin: 0 15px;
+}
+
+.imgpayment {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.widhttext1 h2 {
+    color: #003f48;
+    margin: 5px;
+    padding: 5px;
+    font-size: 48px;
+}
