@@ -26,6 +26,7 @@ body {
 .navbar-nav a:hover {
 	background-color: #3bff60;
 	color: #fff !important;
+	transition: all 0.45s ease;
 }
 
 .navbar-nav a:active {
