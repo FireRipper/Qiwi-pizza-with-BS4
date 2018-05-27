@@ -36,23 +36,31 @@
 </nav>
 </header>
 <section>
-	<div class="container mt-2 shadow-sm rounded border">
-		<div class="row justify-content-end mt-2" id="menu-on-content">
+	<div class="container mt-2 rounded">
+		<div class="row justify-content-end mt-2 mb-2" id="menu-on-content">
 			<div class="col-lg-3">
-				<div id="basket" class="row border mt-5 ml-2">
-						<div id="basket-header" class="col-lg-12 d-flex justify-content-between pt-1 pb-2 bg-light">
+				<div id="basket" class="row mt-5 ml-2 border-light-green-color bg-white mr-1">
+						<div id="basket-header" class="col-lg-12 d-flex justify-content-between pt-1 pb-2 bg-lime-green font-weight-bold">
 							<span id="text-basket-header">Ваш заказ:</span>
 							<img src="img/basket-header.png" alt="basket" height="30">
 						</div>
-						<div id="basket-name-product-and-price" class="col-lg-12 d-flex justify-content-around border-light-green-color">
+						<div id="basket-name-product-and-price" class="col-lg-12 d-flex justify-content-around shadow-sm">
 							<span class="name-product">Товар</span>
 							<span class="name-price">Цена:</span>
 						</div>
-						<div class="col col-lg-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta magnam quos, quasi optio, sint, animi eos ipsam sunt ut voluptatibus harum natus labore cum officiis voluptates. Excepturi nesciunt, molestias amet.</div>	
+						<div class="col-6 basket-content-name" >Корзина пуста!</div>
+						<div class="col-6 basket-content-price text-center">
+						</div>	
+						<div class="col-lg-12 d-flex justify-content-between pt-1 pb-1 bg-lime-green font-weight-bold" id="basket-total-price">
+							<span class="">К оплате:</span><span class="total-price"> </span> 
+						</div>
+						<div class="col bg-lime-green basket-btn pb-2">
+							<div class="btn btn-outline-success shadow-sm">Оформить заказ</div>
+						</div>
 				</div>
 			</div>
-			<div class="col col-lg-9">
-			<ul class="nav nav-tabs justify-content-center  font-weight-bold" id="myTab" role="tablist">
+			<div class="col col-lg-9 bg-white shadow-sm border">
+			<ul class="nav nav-tabs justify-content-center  font-weight-bold mt-1" id="myTab" role="tablist">
 			  <li class="nav-item">
 			    <a class="nav-link active" id="pizza-tab" data-toggle="tab" href="#pizza" role="tab" aria-controls="pizza" aria-selected="true">Пицца</a>
 			  </li>
@@ -187,10 +195,10 @@
 	</div>
 </section>
 <!-- Footer -->
-<footer id="footer" class="footer border-top text-center "> 
+<footer id="footer" class="footer border-top text-center bg-dark"> 
       <div class="container">
       	<div class="row">
-			<div class="col-xl-12">
+			<div class="col-lg-12">
        		 	© 2018 «Qiwi Pizza»
         	</div>
       	</div>
