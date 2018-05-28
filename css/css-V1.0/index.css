@@ -68,6 +68,12 @@ body {
     color: #3bff60;
 }
 
+.composition-product {
+	border-right: 0 !important;
+	border-left: 0 !important; 
+	display: none;
+}
+
 input[type="radio"] {
     display:none
 }
@@ -189,14 +195,22 @@ h4, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 	border-bottom-right-radius: 10px; 
 }
 
-.btn-outline-success {
+.basket-btn .btn-outline-success {
 	background-color: #fff;
 }
 
-.btn-outline-success:hover {
+.basket-btn .btn-outline-success:hover {
 	border: 1px solid #fff;
-
+	background: #28a745;
+	color: #fff;
 }
+
+.total-price {
+	background: #fff;
+	color: #F31C1C;
+	border-radius: 10px;
+}
+
 
 @media screen and (max-width: 768px) {
 	h5 {
