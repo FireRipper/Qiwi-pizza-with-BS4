@@ -9,6 +9,10 @@
     <!-- <link rel="stylesheet" href="css/css-bootstrap/bootstrap-grid.min.css" type="text/css">
     <link rel="stylesheet" href="css/css-bootstrap/bootstrap-reboot.min.css" type="text/css"> -->
     <link rel="stylesheet" href="css/css-V1.0/index.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
@@ -52,7 +56,7 @@
 						<div class="col-6 basket-content-price text-center">
 						</div>	
 						<div class="col-lg-12 d-flex justify-content-between pt-1 pb-1 bg-lime-green" id="basket-total-price">
-							<span class="font-weight-bold p-1">К оплате:</span><span class="total-price border-light-green-color p-1">2400 грн.</span> 
+							<span class="font-weight-bold p-1">К оплате:</span><span class="total-price border-light-green-color p-1">0 грн.</span> 
 						</div>
 						<div class="col bg-lime-green basket-btn pb-2">
 							<div class="btn btn-outline-success shadow-sm">Оформить заказ</div>
@@ -87,8 +91,8 @@
 				  		<div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
 				  			<span>Цена: <span class="total_price_product">108грн.</span></span>
 				  		</div>
-				  		<div class="col-lg-12" id="composition-pizza0"> <h4>Состав пиццы:</h4></div>
-				  		<div class="col"> <p class="text-lowercase composition-product border-light-green-color">МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
+				  		<div class="col-lg-12" id="composition-pizza0" style="border: 1px solid #3bff60; border-radius: 5px;"> <h4>Состав пиццы:</h4></div>
+				  		<div class="col" id="compositionpizza0" style="display: none;"> <p class="text-lowercase composition-product border-light-green-color">МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
 				  		<div class="col-lg-12">
 				  				<form name="formchoose" class="form form-radbtn border-light-green-color">
 					  				<legend>Выбери размер пиццы:</legend>
@@ -122,8 +126,9 @@
 				  		<div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
 				  			<span>Цена: <span class="total_price_product">108грн.</span></span>
 				  		</div>
-				  		<div class="col-lg-12" id="composition-pizza1"> <h4>Состав пиццы:</h4></div>
-				  		<div class="col"> <p class="text-lowercase composition-product border-light-green-color">МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
+				  		<div class="col-lg-12" id="composition-pizza1"> <h4>Состав пиццы:</h4>
+				  		</div>
+				  		<div class="col" id="compositionpizza1" style="display: none;"> <p class="text-lowercase composition-product border-light-green-color">МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
 				  		<div class="col-lg-12">
 				  				<form name="formchoose" class="form form-radbtn border-light-green-color">
 					  				<legend>Выбери размер пиццы:</legend>
@@ -158,7 +163,7 @@
 				  			<span>Цена: <span class="total_price_product">108грн.</span></span>
 				  		</div>
 				  		<div class="col-lg-12" id="composition-pizza2"> <h4>Состав пиццы:</h4></div>
-				  		<div class="col"> <p class="text-lowercase composition-product border-light-green-color">МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
+				  		<div class="col" id="compositionpizza2" style="display: none;"> <p class="text-lowercase composition-product border-light-green-color">МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
 				  		<div class="col-lg-12">
 				  				<form name="formchoose" class="form form-radbtn border-light-green-color">
 					  				<legend>Выбери размер пиццы:</legend>
@@ -205,8 +210,21 @@
       </div>
 </footer> 
 	<!-- ./Footer -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script> $(document).ready(function(){
+
+           $("#composition-pizza0").click(function () {
+	           if ($("#compositionpizza0").is(":hidden")) {
+
+	                   $("#compositionpizza0").show("slow");
+
+	           } else {
+
+	                   $("#compositionpizza0").hide("slow");
+
+	           }
+	return false;
+});
+});</script>
+
 </body>
 </html>
