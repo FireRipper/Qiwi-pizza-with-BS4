@@ -68,6 +68,11 @@ body {
     color: #3bff60;
 }
 
+.caption-composition :hover {
+	cursor: pointer;
+	color: #57c1ff !important;
+}
+
 .composition-product {
 	border-right: 0 !important;
 	border-left: 0 !important; 
