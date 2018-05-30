@@ -219,6 +219,11 @@ h4, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 	border-radius: 10px;
 }
 
+@media screen and (max-width: 997px) {
+	#basket {
+		display: none;
+	}
+}
 
 @media screen and (max-width: 768px) {
 	h5 {
