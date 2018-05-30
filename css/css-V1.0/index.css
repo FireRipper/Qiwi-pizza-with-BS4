@@ -12,7 +12,7 @@ body {
 
 .for-header-navbar {
 	border-bottom: 1px solid #3BFF60; 
-	box-shadow: 0 1px 3px rgba(59,255,96,0.62), 0 1px 2px rgba(59,255,96, 1.24); 
+	box-shadow: 0 1px 3px rgba(59,255,96,0.62), 0 1px 2px rgba(59,255,96, 1); 
 	border-bottom-right-radius: 10px; 
 	border-bottom-left-radius: 10px;
 }
@@ -188,6 +188,13 @@ h4, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 	font-size: 1.05rem;
 }
 
+.basket-content-name img {
+	position: absolute; 
+	left: -138px; 
+	display: none; 
+	cursor: pointer;
+}
+
 #basket-name-product-and-price {
 	border-bottom: 1px solid #76b900;
 	border-bottom-left-radius: 10px;
@@ -219,9 +226,24 @@ h4, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 	border-radius: 10px;
 }
 
-@media screen and (max-width: 997px) {
-	#basket {
-		display: none;
+@media only screen and (max-width: 1000px) {
+
+	.basket-content-name img {
+		display: block;
+	    position: fixed;
+	    left: 0;
+	    top: 50%;
+	    width: 40px;
+	    height: 112px;
+	    z-index: 35000;
+	    width: 55px;
+    	height: 62px;
+    	left: -8px;
+    	cursor: pointer;
+	}
+	.basket-content-name img:hover {
+		box-shadow: 0 1px 3px rgba(59,255,96,0.62), 0 1px 2px rgba(50,140,96, 1);
+		border-radius: 12px;
 	}
 }
 
