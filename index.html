@@ -1,222 +1,302 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Qiwi Pizza</title>
     <link rel="icon" href="img/Pizza-ico.ico" type="images/icon">
     <link rel="stylesheet" href="css/css-bootstrap/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/css-V1.0/index.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    <script src="js/content.js"></script>
+    <script src="js/generatecontent.js"></script>
 </head>
 <body>
+
+<!-- <div id="blockcontent">
+    <div data-id class="col col-3 border-light-green-color m-2 shadow-sm text-center">
+        <h4>Бургер пицца</h4>
+        <div class="row">
+            <div class="col p-3 img-pizza">
+                <img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
+            </div>
+            <div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
+                <span>Цена: <span class="total_price_product">108грн.</span></span>
+            </div>
+            <div id="composition-pizza0" class="col-lg-12 caption-composition"><h4>Состав
+                пиццы:</h4></div>
+            <div id="compositionpizza0" class="col" style="display: none;"><p
+                    class="text-lowercase composition-product border-light-green-color">
+                МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
+            <div class="col-lg-12">
+                <form name="formchoose" class="form form-radbtn border-light-green-color">
+                    <legend>Выбери размер пиццы:</legend>
+                    <input type="radio" id="c-0-0" name="order" value="108" checked=""
+                           onclick="changeSelectRadioButton(0);">
+                    <label for="c-0-0"><span></span>108грн. (330г.)</label>
+                    <input type="radio" id="c-1-0" name="order" value="145"
+                           onclick="changeSelectRadioButton(0);">
+                    <label for="c-1-0"><span></span>145грн. (610г.)</label>
+                    <input type="radio" id="c-2-0" name="order" value="200"
+                           onclick="changeSelectRadioButton(0);">
+                    <label for="c-2-0"><span></span>200грн. (880г.)</label>
+                </form>
+            </div>
+            <div class="col-lg-12 text-color-quantity">
+                <h5>Количество:</h5>
+            </div>
+            <div class="col-lg-12">
+                <span class="minus btn-minus-quantity" onclick="minusQuantity(0)">-</span>
+                <input value="1" class="quantity-product text-center " readonly>
+                <span class="plus btn-plus-quantity" onclick="plusQuantity(0)">+</span>
+            </div>
+            <div class="col-lg-12 mt-2 mb-2">
+                <div class="btn btn-outline-success">Заказать</div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
 <header>
-<nav id="menu-on-header" class="navbar navbar-expand-lg navbar-light bg-white for-header-navbar">
-	<a class="navbar-brand" href="index.html">
-		<img src="img/QiwiV1.png" alt="logo" height="50">
-	</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="border: 1px solid #3bff60;">
-	    <span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarNavAltMarkup" style>
-	    <div class="navbar-nav text-center m-auto mt-lg-0">
-	      <a class="nav-item nav-link ml-2 mt-1" href="html/aboutme.html">О нас</a>
-	      <a class="nav-item nav-link ml-2 mt-1" href="html/contact.html">Контакты</a>
-	      <a class="nav-item nav-link ml-2 mt-1" href="html/PaymentInfo.html">Доставка и оплата</a>
-	      <a class="nav-item nav-link ml-2 mt-1" href="html/callback.html">Обратная связь</a>
-	    </div>
-	    <div class="pl-0 mt-1 d-flex"><img src="img/callbackico.png" alt="callback" height="50">
-  		<ul class="callback-text m-0 font-weight-bold">
-	  		<li>(044) 266-66-06</li>
-	        <li>(068) 266-66-06</li>
-        </ul>	
-  		</div>
-  	</div>
-</nav>
+    <nav id="menu-on-header" class="navbar navbar-expand-lg navbar-light bg-white for-header-navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/QiwiV1.png" alt="logo" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                style="border: 1px solid #3bff60;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style>
+            <div class="navbar-nav text-center m-auto mt-lg-0">
+                <a class="nav-item nav-link ml-2 mt-1" href="html/aboutme.html">О нас</a>
+                <a class="nav-item nav-link ml-2 mt-1" href="html/contact.html">Контакты</a>
+                <a class="nav-item nav-link ml-2 mt-1" href="html/PaymentInfo.html">Доставка и оплата</a>
+                <a class="nav-item nav-link ml-2 mt-1" href="html/callback.html">Обратная связь</a>
+            </div>
+            <div class="pl-0 mt-1 d-flex"><img src="img/callbackico.png" alt="callback" height="50">
+                <ul class="callback-text m-0 font-weight-bold">
+                    <li>(044) 266-66-06</li>
+                    <li>(068) 266-66-06</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 <section>
-	<div class="container mt-2 rounded">
-		<div class="row justify-content-end mt-2 mb-2" id="menu-on-content">
-			<div class="col-lg-3">
-				<div id="basket" class="row mt-5 ml-2 border-light-green-color bg-white mr-1">
-						<div id="basket-header" class="col-lg-12 d-flex justify-content-between pt-1 pb-2 bg-lime-green font-weight-bold">
-							<span id="text-basket-header">Ваш заказ:</span>
-							<img src="img/basket-header.png" alt="basket" height="30">
-						</div>
-						<div id="basket-name-product-and-price" class="col-lg-12 d-flex justify-content-around shadow-sm">
-							<span class="name-product">Товар</span>
-							<span class="name-price">Цена:</span>
-						</div>
-						<div class="col-6 basket-content-name" >Корзина пуста!<img src="img/icon-basket-mobile.png" alt="basket"></div>
-						<div class="col-6 basket-content-price text-center">
-						</div>	
-						<div class="col-lg-12 d-flex justify-content-between pt-1 pb-1 bg-lime-green" id="basket-total-price">
-							<span class="font-weight-bold p-1">К оплате:</span><span class="total-price border-light-green-color p-1">0 грн.</span> 
-						</div>
-						<div class="col bg-lime-green basket-btn pb-2">
-							<div class="btn btn-outline-success shadow-sm">Оформить заказ</div>
-						</div>
-				</div>
-			</div>
-			<div class="col col-lg-9 bg-white shadow-sm border">
-			<ul class="nav nav-tabs justify-content-center  font-weight-bold mt-1" id="myTab" role="tablist">
-			  <li class="nav-item">
-			    <a class="nav-link active" id="pizza-tab" data-toggle="tab" href="#pizza" role="tab" aria-controls="pizza" aria-selected="true">Пицца</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" id="baguettes-tab" data-toggle="tab" href="#baguettes" role="tab" aria-controls="baguettes" aria-selected="false">Багеты</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" id="set-tab" data-toggle="tab" href="#set" role="tab" aria-controls="set" aria-selected="false">Наборы</a>
-			  </li>
-			  <li class="nav-item">
-			    <a class="nav-link" id="salads-tab" data-toggle="tab" href="#salads" role="tab" aria-controls="salads" aria-selected="false">Салаты</a>
-			  </li>
-			</ul>
-			<div class="tab-content" id="myTabContent">
-			  <div class="tab-pane fade show active" id="pizza" role="tabpanel" aria-labelledby="pizza-tab" onclick="">
-			  	<!-- inner from js -->
-			  	<div id="content-pizza" class="row justify-content-around"> 
-			  	<div id="product0" class="col col-3 border-light-green-color m-2 shadow-sm text-center">
-			  		<h4>Бургер пицца</h4>
-			  		<div class="row">
-				  		<div class="col p-3 img-pizza">
-				  			<img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
-				  		</div>
-				  		<div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
-				  			<span>Цена: <span class="total_price_product">108грн.</span></span>
-				  		</div>
-				  		<div  id="composition-pizza0" class="col-lg-12 caption-composition"> <h4>Состав пиццы:</h4></div>
-				  		<div id="compositionpizza0" class="col" style="display: none;"> <p class="text-lowercase composition-product border-light-green-color">МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
-				  		<div class="col-lg-12">
-				  				<form name="formchoose" class="form form-radbtn border-light-green-color">
-					  				<legend>Выбери размер пиццы:</legend>
-				  					<input type="radio" id="c-0-0" name="order" value="108" checked="" onclick="changeSelectRadioButton(0);">
-				  						<label for="c-0-0"><span></span>108грн. (330г.)</label>
-				  					<input type="radio" id="c-1-0" name="order" value="145" onclick="changeSelectRadioButton(0);">
-				  						<label for="c-1-0"><span></span>145грн. (610г.)</label>
-				  					<input type="radio" id="c-2-0" name="order" value="200" onclick="changeSelectRadioButton(0);">
-				  						<label for="c-2-0"><span></span>200грн. (880г.)</label>
-				  				</form>
-				  		</div>
-				  		<div class="col-lg-12 text-color-quantity">
-				  			<h5>Количество:</h5>
-		  				</div>
-		  				<div class="col-lg-12">
-		  					<span class="minus btn-minus-quantity" onclick="minusQuantity(0)">-</span>
-		  					<input value="1" class="quantity-product text-center " readonly>
-		  					<span class="plus btn-plus-quantity" onclick="plusQuantity(0)">+</span>
-		  				</div>
-		  				<div class="col-lg-12 mt-2 mb-2">
-		  					<div class="btn btn-outline-success">Заказать</div>
-		  				</div>
-			  		</div>
-			  	</div>
-			  	<div id="product1" class="col col-3 border-light-green-color m-2 shadow-sm text-center">
-			  		<h4>Бургер пицца</h4>
-			  		<div class="row">
-				  		<div class="col p-3 img-pizza">
-				  			<img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
-				  		</div>
-				  		<div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
-				  			<span>Цена: <span class="total_price_product">108грн.</span></span>
-				  		</div>
-				  		<div id="composition-pizza1" class="col-lg-12 caption-composition"> <h4>Состав пиццы:</h4>
-				  		</div>
-				  		<div class="col" id="compositionpizza1" style="display: none;"> <p class="text-lowercase composition-product border-light-green-color">МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
-				  		<div class="col-lg-12">
-				  				<form name="formchoose" class="form form-radbtn border-light-green-color">
-					  				<legend>Выбери размер пиццы:</legend>
-				  					<input type="radio" id="c-3-0" name="order" value="108" checked="" onclick="changeSelectRadioButton(1);">
-				  						<label for="c-3-0"><span></span>108грн. (330г.)</label>
-				  					<input type="radio" id="c-4-0" name="order" value="145" onclick="changeSelectRadioButton(1);">
-				  						<label for="c-4-0"><span></span>145грн. (610г.)</label>
-				  					<input type="radio" id="c-5-0" name="order" value="200" onclick="changeSelectRadioButton(1);">
-				  						<label for="c-5-0"><span></span>200грн. (880г.)</label>
-				  				</form>
-				  		</div>
-				  		<div class="col-lg-12 text-color-quantity ">
-				  			<h5>Количество:</h5>
-		  				</div>
-		  				<div class="col-lg-12">
-		  					<span class="minus btn-minus-quantity" onclick="minusQuantity(1)">-</span>
-		  					<input value="1" class="quantity-product text-center " readonly>
-		  					<span class="plus btn-plus-quantity" onclick="plusQuantity(1)">+</span>
-		  				</div>
-		  				<div class="col-lg-12 mt-2 mb-2">
-		  					<div class="btn btn-outline-success">Заказать</div>
-		  				</div>
-			  		</div>
-			  	</div>
-			  	<div id="product2" class="col col-3 border-light-green-color m-2 shadow-sm text-center">	
-			  		<div class="row">
-			  			<div class="col"><h4>Бургер пицца</h4></div>
-				  		<div class="col p-3 img-pizza">
-				  			<img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
-				  		</div>
-				  		<div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
-				  			<span>Цена: <span class="total_price_product">108грн.</span></span>
-				  		</div>
-				  		<div id="composition-pizza2" class="col-lg-12 caption-composition"> <h4>Состав пиццы:</h4></div>
-				  		<div class="col" id="compositionpizza2" style="display: none;"> <p class="text-lowercase composition-product border-light-green-color">МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
-				  		<div class="col-lg-12">
-				  				<form name="formchoose" class="form form-radbtn border-light-green-color">
-					  				<legend>Выбери размер пиццы:</legend>
-				  					<input type="radio" id="c-6-0" name="order" value="108" checked onclick="changeSelectRadioButton(2);">
-				  						<label for="c-6-0"><span></span>108грн. (330г.)</label>
-				  					<input type="radio" id="c-7-0" name="order" value="145" onclick="changeSelectRadioButton(2);">
-				  						<label for="c-7-0"><span></span>145грн. (610г.)</label>
-				  					<input type="radio" id="c-8-0" name="order" value="200" onclick="changeSelectRadioButton(2);">
-				  						<label for="c-8-0"><span></span>200грн. (880г.)</label>
-				  				</form>
-				  		</div>
-				  		<div class="col-lg-12 text-color-quantity">
-				  			<h5>Количество:</h5>
-		  				</div>
-		  				<div class="col-lg-12">
-		  					<span class="minus btn-minus-quantity" onclick="minusQuantity(1)">-</span>
-		  					<input value="1" class="quantity-product text-center " readonly>
-		  					<span class="plus btn-plus-quantity" onclick="plusQuantity(1)">+</span>
-		  				</div>
-		  				<div class="col-lg-12 mt-2 mb-2">
-		  					<div class="btn btn-outline-success">Заказать</div>
-		  				</div>
-			  		</div>
-			  	</div>
-			  </div>
-			  </div>
-			  <!-- next page -->
-			  <div class="tab-pane fade" id="baguettes" role="tabpanel" aria-labelledby="baguettes-tab"><!-- inner from js --> Багеты</div>
-			  <div class="tab-pane fade" id="set" role="tabpanel" aria-labelledby="set-tab">Наборы</div>
-			  <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salads-tab">Салаты</div>
-			</div>
-			</div>
-		</div>
-	</div>
+    <div class="container mt-2 rounded">
+        <div class="row justify-content-end mt-2 mb-2" id="menu-on-content">
+            <div class="col-lg-3">
+                <div id="basket" class="row mt-5 ml-2 border-light-green-color bg-white mr-1">
+                    <div id="basket-header"
+                         class="col-lg-12 d-flex justify-content-between pt-1 pb-2 bg-lime-green font-weight-bold">
+                        <span id="text-basket-header">Ваш заказ:</span>
+                        <img src="img/basket-header.png" alt="basket" height="30">
+                    </div>
+                    <div id="basket-name-product-and-price" class="col-lg-12 d-flex justify-content-around shadow-sm">
+                        <span class="name-product">Товар:</span>
+                        <span class="name-price">Цена:</span>
+                    </div>
+                    <div class="col-6 basket-content-name">Корзина пуста!<img src="img/icon-basket-mobile.png"
+                                                                              alt="basket"></div>
+                    <div class="col-6 basket-content-price text-center">
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-between pt-1 pb-1 bg-lime-green"
+                         id="basket-total-price">
+                        <span class="font-weight-bold p-1">К оплате:</span><span
+                            class="total-price border-light-green-color p-1">0 грн.</span>
+                    </div>
+                    <div class="col bg-lime-green basket-btn pb-2">
+                        <div class="btn btn-outline-success shadow-sm">Оформить заказ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-9 bg-white shadow-sm border">
+                <ul class="nav nav-tabs justify-content-center font-weight-bold mt-1 tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pizza-tab" data-toggle="tab" href="#pizza" role="tab"
+                           aria-controls="pizza" aria-selected="true">Пицца</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="baguettes-tab" data-toggle="tab" href="#baguettes" role="tab"
+                           aria-controls="baguettes" aria-selected="false">Багеты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="set-tab" data-toggle="tab" href="#set" role="tab" aria-controls="set"
+                           aria-selected="false">Наборы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="salads-tab" data-toggle="tab" href="#salads" role="tab"
+                           aria-controls="salads" aria-selected="false">Салаты</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="pizza" role="tabpanel" aria-labelledby="pizza-tab"
+                         onclick="">
+                        <!-- inner from js -->
+                        <div id="content-pizza" class="row justify-content-around">
+                            <div id="product0" class="col col-3 border-light-green-color m-2 shadow-sm text-center">
+                                <h4>Бургер пицца</h4>
+                                <div class="row">
+                                    <div class="col p-3 img-pizza">
+                                        <img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
+                                    </div>
+                                    <div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
+                                        <span>Цена: <span class="total_price_product">108грн.</span></span>
+                                    </div>
+                                    <div id="composition-pizza0" class="col-lg-12 caption-composition"><h4>Состав
+                                        пиццы:</h4></div>
+                                    <div id="compositionpizza0" class="col" style="display: none;"><p
+                                            class="text-lowercase composition-product border-light-green-color">
+                                        МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
+                                    <div class="col-lg-12">
+                                        <form name="formchoose" class="form form-radbtn border-light-green-color">
+                                            <legend>Выбери размер пиццы:</legend>
+                                            <input type="radio" id="c-0-0" name="order" value="108" checked=""
+                                                   onclick="changeSelectRadioButton(0);">
+                                            <label for="c-0-0"><span></span>108грн. (330г.)</label>
+                                            <input type="radio" id="c-1-0" name="order" value="145"
+                                                   onclick="changeSelectRadioButton(0);">
+                                            <label for="c-1-0"><span></span>145грн. (610г.)</label>
+                                            <input type="radio" id="c-2-0" name="order" value="200"
+                                                   onclick="changeSelectRadioButton(0);">
+                                            <label for="c-2-0"><span></span>200грн. (880г.)</label>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-12 text-color-quantity">
+                                        <h5>Количество:</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <span class="minus btn-minus-quantity" onclick="minusQuantity(0)">-</span>
+                                        <input value="1" class="quantity-product text-center " readonly>
+                                        <span class="plus btn-plus-quantity" onclick="plusQuantity(0)">+</span>
+                                    </div>
+                                    <div class="col-lg-12 mt-2 mb-2">
+                                        <div class="btn btn-outline-success">Заказать</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="product1" class="col col-3 border-light-green-color m-2 shadow-sm text-center">
+                                <h4>Бургер пицца</h4>
+                                <div class="row">
+                                    <div class="col p-3 img-pizza">
+                                        <img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
+                                    </div>
+                                    <div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
+                                        <span>Цена: <span class="total_price_product">108грн.</span></span>
+                                    </div>
+                                    <div id="composition-pizza1" class="col-lg-12 caption-composition"><h4>Состав
+                                        пиццы:</h4>
+                                    </div>
+                                    <div class="col" id="compositionpizza1" style="display: none;"><p
+                                            class="text-lowercase composition-product border-light-green-color">
+                                        МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
+                                    <div class="col-lg-12">
+                                        <form name="formchoose" class="form form-radbtn border-light-green-color">
+                                            <legend>Выбери размер пиццы:</legend>
+                                            <input type="radio" id="c-3-0" name="order" value="108" checked=""
+                                                   onclick="changeSelectRadioButton(1);">
+                                            <label for="c-3-0"><span></span>108грн. (330г.)</label>
+                                            <input type="radio" id="c-4-0" name="order" value="145"
+                                                   onclick="changeSelectRadioButton(1);">
+                                            <label for="c-4-0"><span></span>145грн. (610г.)</label>
+                                            <input type="radio" id="c-5-0" name="order" value="200"
+                                                   onclick="changeSelectRadioButton(1);">
+                                            <label for="c-5-0"><span></span>200грн. (880г.)</label>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-12 text-color-quantity ">
+                                        <h5>Количество:</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <span class="minus btn-minus-quantity" onclick="minusQuantity(1)">-</span>
+                                        <input value="1" class="quantity-product text-center " readonly>
+                                        <span class="plus btn-plus-quantity" onclick="plusQuantity(1)">+</span>
+                                    </div>
+                                    <div class="col-lg-12 mt-2 mb-2">
+                                        <div class="btn btn-outline-success">Заказать</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="product2" class="col col-3 border-light-green-color m-2 shadow-sm text-center">
+                                <div class="row">
+                                    <div class="col"><h4>Бургер пицца</h4></div>
+                                    <div class="col p-3 img-pizza">
+                                        <img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
+                                    </div>
+                                    <div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
+                                        <span>Цена: <span class="total_price_product">108грн.</span></span>
+                                    </div>
+                                    <div id="composition-pizza2" class="col-lg-12 caption-composition"><h4>Состав
+                                        пиццы:</h4></div>
+                                    <div class="col" id="compositionpizza2" style="display: none;"><p
+                                            class="text-lowercase composition-product border-light-green-color">
+                                        МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
+                                    <div class="col-lg-12">
+                                        <form name="formchoose" class="form form-radbtn border-light-green-color">
+                                            <legend>Выбери размер пиццы:</legend>
+                                            <input type="radio" id="c-6-0" name="order" value="108" checked
+                                                   onclick="changeSelectRadioButton(2);">
+                                            <label for="c-6-0"><span></span>108грн. (330г.)</label>
+                                            <input type="radio" id="c-7-0" name="order" value="145"
+                                                   onclick="changeSelectRadioButton(2);">
+                                            <label for="c-7-0"><span></span>145грн. (610г.)</label>
+                                            <input type="radio" id="c-8-0" name="order" value="200"
+                                                   onclick="changeSelectRadioButton(2);">
+                                            <label for="c-8-0"><span></span>200грн. (880г.)</label>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-12 text-color-quantity">
+                                        <h5>Количество:</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <span class="minus btn-minus-quantity" onclick="minusQuantity(1)">-</span>
+                                        <input value="1" class="quantity-product text-center " readonly>
+                                        <span class="plus btn-plus-quantity" onclick="plusQuantity(1)">+</span>
+                                    </div>
+                                    <div class="col-lg-12 mt-2 mb-2">
+                                        <div class="btn btn-outline-success">Заказать</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- next page -->
+                    <div class="tab-pane fade" id="baguettes" role="tabpanel" aria-labelledby="baguettes-tab">
+                        <!-- inner from js --> Багеты
+                    </div>
+                    <div class="tab-pane fade" id="set" role="tabpanel" aria-labelledby="set-tab">Наборы</div>
+                    <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salads-tab">Салаты</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- Footer -->
-<footer id="footer" class="footer border-top text-center bg-dark"> 
-      <div class="container">
-      	<div class="row">
-			<div class="col-lg-12">
-       		 	© 2018 «Qiwi Pizza»
-        	</div>
-      	</div>
-      </div>
-</footer> 
-	<!-- ./Footer -->
-	<script>
-		$(document).ready(function(){
-           $("#composition-pizza0").click(function () {
-	           if ($("#compositionpizza0").is(":hidden")) {
-	                   $("#compositionpizza0").show(600);
-	           } else {
-	                   $("#compositionpizza0").hide(400);
-	           }
-	return false;
-	});
-});
-	</script>
+<footer id="footer" class="footer border-top text-center bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                © 2018 «Qiwi Pizza»
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ./Footer -->
+<script>
+    $(document).ready(function () {
+        $("#composition-pizza0").click(function () {
+            if ($("#compositionpizza0").is(":hidden")) {
+                $("#compositionpizza0").show(600);
+            } else {
+                $("#compositionpizza0").hide(400);
+            }
+            return false;
+        });
+    });
+</script>
 </body>
 </html>

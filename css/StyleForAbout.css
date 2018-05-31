@@ -1,24 +1,32 @@
-#contentaboutme, .widhttext1 {
-    float: right;
+#text-about {
+    border-radius: 5px ;
 }
 
-#contentaboutme {
-    width: 980px;
-    height: 100%;
-    margin: 10px 15px 10px 5px;
-    padding: 15px 15px ;
-    background: #fff;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+#text-about h1, h2, h3 { 
+    color: #76b900;
+    text-shadow: -1px -1px #FFF,
+               -2px -2px #FFF,
+               -1px 1px #FFF,
+               -2px 2px #FFF,
+               1px 1px #FFF,
+               2px 2px #FFF,
+               1px -1px #FFF,
+               2px -2px #FFF,
+               -3px -3px 2px #BBB,
+               -3px 3px 2px #BBB,
+               3px 3px 2px #BBB,
+               3px -3px 2px #BBB;
+    transition: all 0.86s;
 }
 
-.widhttext1 {
-    width: 970px;
-    margin: 0 15px;
-}
-
-.widhttext1 h2 {
-    color: #003f48;
-    margin: 5px;
-    padding: 5px;
-    font-size: 48px;
+@media screen and (max-width: 560px) {
+    #text-about h1, h2, h3 {
+        font-size: 20px;
+    }
+    #text-about p {
+        font-size: 14px;
+    }
+    .btn-outline-success {
+        font-size: 14px;
+    }
 }
