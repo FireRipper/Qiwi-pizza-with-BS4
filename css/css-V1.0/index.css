@@ -119,6 +119,18 @@ input[type = "radio"]:checked + label span {
 
 h4, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 	color: #76b900 !important;
+	text-shadow: -1px -1px #fff,
+               -2px -2px #fff,
+               -1px 1px #fff,
+               -2px 2px #fff,
+               1px 1px #fff,
+               2px 2px #fff,
+               1px -1px #fff,
+               2px -2px #fff,
+               -3px -3px 2px #BBB,
+               -3px 3px 2px #BBB,
+               3px 3px 2px #BBB,
+               3px -3px 2px #BBB;
 }
 
 .btn {
@@ -181,19 +193,7 @@ h4, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 
 #text-basket-header {
 	font-size: 1.35rem;
-	color: #76b900;
-	text-shadow: -1px -1px #FFF,
-               -2px -2px #FFF,
-               -1px 1px #FFF,
-               -2px 2px #FFF,
-               1px 1px #FFF,
-               2px 2px #FFF,
-               1px -1px #FFF,
-               2px -2px #FFF,
-               -3px -3px 2px #BBB,
-               -3px 3px 2px #BBB,
-               3px 3px 2px #BBB,
-               3px -3px 2px #BBB;
+	color: #fff;
 	letter-spacing: 3px;
 } 
 

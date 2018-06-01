@@ -2,51 +2,75 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Qiwi Pizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Qiwi Pizza - Контакты</title>
     <link rel="icon" href="../img/Pizza-ico.ico" type="images/icon">
-    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="../css/css-bootstrap/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/css-V1.0/index.css" type="text/css">
     <link rel="stylesheet" href="../css/StyleContact.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script> 
 </head>
 <body>
 <header>
-    <div class="container ">
-        <img src="../img/firstbg.jpg" alt="Qiwi Pizza" title="Logo">
-    </div>
-</header>
-<section>
-    <div class="container clearfix marg" >
-        <div class="call">
-            <div class="iconcall clearfix">
-                <img src="../img/callbackico.png" alt="Перезвоните нам" title="Перезвоните нам">
+    <nav id="menu-on-header" class="navbar navbar-expand-lg navbar-light bg-white for-header-navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="../img/QiwiV1.png" alt="logo" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                style="border: 1px solid #3bff60;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style>
+            <div class="navbar-nav text-center m-auto mt-lg-0">
+                <a class="nav-item nav-link ml-2 mt-1" href="../index.html">Главная</a>
+                <a class="nav-item nav-link ml-2 mt-1" href="aboutme.html">О нас</a>
+                <a class="nav-item nav-link ml-2 mt-1" href="PaymentInfo.html">Доставка и оплата</a>
+                <a class="nav-item nav-link ml-2 mt-1" href="callback.html">Обратная связь</a>
             </div>
-            <div class="callback">
-                <ul>
+            <div class="pl-0 mt-1 d-flex"><img src="../img/callbackico.png" alt="callback" height="50">
+                <ul class="callback-text m-0 font-weight-bold">
                     <li>(044) 266-66-06</li>
                     <li>(068) 266-66-06</li>
                 </ul>
             </div>
         </div>
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../html/aboutme.html">О нас</a>
-                    </li>
-                    <li>
-                        <a href="../html/contact.html">Контакты</a>
-                    </li>
-                    <li>
-                        <a href="../html/PaymentInfo.html">Доставка и оплата</a>
-                    </li>
-                    <li>
-                        <a href="../html/callback.html">Обратная связь</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    </nav>
+</header>
+<section>
+    <div class="container mt-2 mb-2 rounded">
+        <div class="row" id="menu-on-content">
+            <div class="col-lg-3">
+                <div id="basket" class="row mt-5 ml-2 border-light-green-color bg-white mr-1">
+                    <div id="basket-header"
+                         class="col-lg-12 d-flex justify-content-between pt-1 pb-2 bg-lime-green font-weight-bold">
+                        <span id="text-basket-header">Ваш заказ:</span>
+                        <img src="../img/basket-header.png" alt="basket" height="30">
+                    </div>
+                    <div id="basket-name-product-and-price" class="col-lg-12 d-flex justify-content-around shadow-sm">
+                        <span class="name-product">Товар:</span>
+                        <span class="name-price">Цена:</span>
+                    </div>
+                    <div class="col-6 basket-content-name">Корзина пуста!<img src="../img/icon-basket-mobile.png" alt="basket"></div>
+                    <div class="col-6 basket-content-price text-center">
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-between pt-1 pb-1 bg-lime-green"
+                         id="basket-total-price">
+                        <span class="font-weight-bold p-1">К оплате:</span><span
+                            class="total-price border-light-green-color p-1">0 грн.</span>
+                    </div>
+                    <div class="col bg-lime-green basket-btn pb-2">
+                        <div class="btn btn-outline-success shadow-sm">Оформить заказ</div>
+                    </div>
+                </div>
+          </div>
     </div>
+</div>
 </section>
-<section id="for_footer">
+<!-- <section id="for_footer">
     <div class="container clearfix">
         <div class="widhttext1" >
             <div>
@@ -107,44 +131,17 @@
             </div>
         </div>
     </div>
-</section>
-<footer>
-    <div class="container1 clearfix">
-    <div class="menu_in_footer">
-        <nav>
-            <ul>
-                <li>
-                    <a href="aboutme.html">О нас</a>
-                </li>
-                <li>
-                    <a href="contact.html">Контакты</a>
-                </li>
-                <li>
-                    <a href="PaymentInfo.html">Доставка и оплата</a>
-                </li>
-                <li>
-                    <a href="callback.html">Обратная связь</a>
-                </li>
-            </ul>
-        </nav>
-        </div>
-        <div class="foot_col2">
-        <img src="../img/qiwifoot.png" alt="Logo">
-        </div>
-        <div class="foot_col3">
-            <div class="social_icon">
-                <a href="https://www.facebook.com/" class="social_icon_fb correct_size_social_icon" target="_blank"></a>
-                <a href="https://www.instagram.com/" class="social_icon_intagram correct_size_social_icon" target="_blank"></a>
-                <a href="https://www.messenger.com/" class="social_icon_messenger correct_size_social_icon" target="_blank"></a>
-                <a href="https://twitter.com/" class="social_icon_twitter correct_size_social_icon" target="_blank"></a> 
+</section> -->
+<!-- Footer -->
+<footer id="footer" class="footer border-top text-center bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                © 2018 «Qiwi Pizza»
             </div>
         </div>
-    <div class="foot col1-1">
-        <div id="down">
-            <p>© 2018 «Qiwi Pizza»</p>
-        </div>
     </div>
-</div>
 </footer>
+<!-- Footer -->
 </body>
 </html>
