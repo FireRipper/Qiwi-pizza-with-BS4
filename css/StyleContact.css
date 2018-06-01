@@ -1,46 +1,65 @@
-#contentcontact, .widhttext1 {
-    float: right;
-    width: 980px;
+.border-img {
+    border-radius: 10px;
 }
 
-#contentcontact {
-    height: 640px;
-    margin: 10px 15px 10px 5px;
-    padding: 0 15px ;
-    background: #fff;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+#contact-info {
+    border-radius: 5px;
 }
 
-.widhttext1 {
-    margin: 0 15px;
+#contact-info h2, h3 {
+    color: #76b900;
+    text-shadow: -1px -1px #FFF,
+               -2px -2px #FFF,
+               -1px 1px #FFF,
+               -2px 2px #FFF,
+               1px 1px #FFF,
+               2px 2px #FFF,
+               1px -1px #FFF,
+               2px -2px #FFF,
+               -3px -3px 2px #BBB,
+               -3px 3px 2px #BBB,
+               3px 3px 2px #BBB,
+               3px -3px 2px #BBB;
 }
 
-.widhttext1 h2 {
-    color: #003f48;
-    margin: 5px;
-    padding: 5px;
-    font-size: 48px;
+#contact-info h3, ul {
+    text-align: left;
 }
 
-.tttext {
-    font-size: 20px;
+#contact-info ul {
+    list-style-type: none;
+    padding: 1px;
 }
 
-#contentcontact h2,.callb {
-    text-align: center;
+@media screen and (max-width: 1199px) {
+    .border-img {
+        width: 695px;
+    }    
 }
 
-.callb {
-    color: #0dc600;
-    font-size: 24px; 
+@media screen and (max-width: 767px) {
+    .border-img {
+        width: 525px;
+    }    
 }
 
-#contentcontact ul {
-    margin: 0;
-    padding: 0;
+@media screen and (max-width: 539px) {
+    .border-img {
+        width: 425px;
+    }
+    #contact-info h2, h3 {
+        font-size: 16px;
+    }    
 }
 
-#contentcontact li {
-    list-style: none;
-    font-size: 22px;
+@media screen and (max-width: 438px) {
+    .border-img {
+        width: 390px;
+    }    
+}
+
+@media screen and (max-width: 376px) {
+    .border-img {
+        width: 300px;
+    }    
 }
