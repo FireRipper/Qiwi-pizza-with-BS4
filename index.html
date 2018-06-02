@@ -7,57 +7,9 @@
     <link rel="icon" href="img/Pizza-ico.ico" type="images/icon">
     <link rel="stylesheet" href="libs/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/css-V1.0/index.css" type="text/css">
-    <link rel="stylesheet" href="libs/css/animate.min.css">
-    <script src="libs/js/jquery.min.js"></script>
-    <script src="libs/js/bootstrap.min.js"></script>
-    <script src="js/content.js"></script>
-    <script src="js/generatecontent.js"></script>
+    <link rel="stylesheet" href="libs/css/animate.min.css" type="text/css">
 </head>
 <body>
-
-<!-- <div id="blockcontent">
-    <div data-id class="col col-3 border-light-green-color m-2 shadow-sm text-center">
-        <h4>Бургер пицца</h4>
-        <div class="row">
-            <div class="col p-3 img-pizza">
-                <img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
-            </div>
-            <div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
-                <span>Цена: <span class="total_price_product">108грн.</span></span>
-            </div>
-            <div id="composition-pizza0" class="col-lg-12 caption-composition"><h4>Состав
-                пиццы:</h4></div>
-            <div id="compositionpizza0" class="col" style="display: none;"><p
-                    class="text-lowercase composition-product border-light-green-color">
-                МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
-            <div class="col-lg-12">
-                <form name="formchoose" class="form form-radbtn border-light-green-color">
-                    <legend>Выбери размер пиццы:</legend>
-                    <input type="radio" id="c-0-0" name="order" value="108" checked=""
-                           onclick="changeSelectRadioButton(0);">
-                    <label for="c-0-0"><span></span>108грн. (330г.)</label>
-                    <input type="radio" id="c-1-0" name="order" value="145"
-                           onclick="changeSelectRadioButton(0);">
-                    <label for="c-1-0"><span></span>145грн. (610г.)</label>
-                    <input type="radio" id="c-2-0" name="order" value="200"
-                           onclick="changeSelectRadioButton(0);">
-                    <label for="c-2-0"><span></span>200грн. (880г.)</label>
-                </form>
-            </div>
-            <div class="col-lg-12 text-color-quantity">
-                <h5>Количество:</h5>
-            </div>
-            <div class="col-lg-12">
-                <span class="minus btn-minus-quantity" onclick="minusQuantity(0)">-</span>
-                <input value="1" class="quantity-product text-center " readonly>
-                <span class="plus btn-plus-quantity" onclick="plusQuantity(0)">+</span>
-            </div>
-            <div class="col-lg-12 mt-2 mb-2">
-                <div class="btn btn-outline-success">Заказать</div>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <header>
     <nav id="menu-on-header" class="navbar navbar-expand-lg navbar-light bg-white for-header-navbar">
@@ -135,132 +87,47 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="pizza" role="tabpanel" aria-labelledby="pizza-tab"
                          onclick="">
-                        <!-- inner from js -->
                         <div id="content-pizza" class="row justify-content-around">
-                            <div id="product0" class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeInUp">
-                                <h4>Бургер пицца</h4>
+                            <!-- START GENERATE INNER -->
+                            <div attr-id class="col col-3 border-light-green-color m-2 shadow-sm text-center">
+                                <h4 inner-name></h4>
                                 <div class="row">
                                     <div class="col p-3 img-pizza">
-                                        <img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
+                                        <img attr-img attr-name height="80">
                                     </div>
                                     <div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
-                                        <span>Цена: <span class="total_price_product">108грн.</span></span>
+                                        <span>Цена: <span inner-price class="total_price_product"></span></span>
                                     </div>
-                                    <div id="composition-pizza0" class="col-lg-12 caption-composition"><h4>Состав
+                                    <div attr-composition-0 class="col-lg-12 caption-composition"><h4>Состав
                                         пиццы:</h4></div>
-                                    <div id="compositionpizza0" class="col" style="display: none;"><p
-                                            class="text-lowercase composition-product border-light-green-color">
-                                        МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
+                                    <div attr-composition-1 inner-composition class="col" style="display: none;">
+                                        <p class="text-lowercase composition-product border-light-green-color"></p>
+                                    </div>
                                     <div class="col-lg-12">
-                                        <form name="formchoose" class="form form-radbtn border-light-green-color">
-                                            <legend>Выбери размер пиццы:</legend>
-                                            <input type="radio" id="c-0-0" name="order" value="108" checked=""
-                                                   onclick="changeSelectRadioButton(0);">
-                                            <label for="c-0-0"><span></span>108грн. (330г.)</label>
-                                            <input type="radio" id="c-1-0" name="order" value="145"
-                                                   onclick="changeSelectRadioButton(0);">
-                                            <label for="c-1-0"><span></span>145грн. (610г.)</label>
-                                            <input type="radio" id="c-2-0" name="order" value="200"
-                                                   onclick="changeSelectRadioButton(0);">
-                                            <label for="c-2-0"><span></span>200грн. (880г.)</label>
+                                        <legend>Выбери размер пиццы:</legend>
+                                        <form name="formchoose" class="form form-radbtn border-light-green-color" attr-inputs-form>
+                                            <input attr-form-id="0" type="radio" name="order" value="108" checked>
+                                            <label attr-form-for="0"><span></span>108грн. (330г.)</label>
+                                            <input attr-form-id="1" type="radio" name="order" value="145">
+                                            <label attr-form-for="1"><span></span>145грн. (610г.)</label>
+                                            <input attr-form-id="2" type="radio" name="order" value="200">
+                                            <label attr-form-for="2"><span></span>200грн. (880г.)</label>
                                         </form>
                                     </div>
                                     <div class="col-lg-12 text-color-quantity">
                                         <h5>Количество:</h5>
                                     </div>
                                     <div class="col-lg-12">
-                                        <span class="minus btn-minus-quantity" onclick="minusQuantity(0)">-</span>
-                                        <input value="1" class="quantity-product text-center " readonly>
-                                        <span class="plus btn-plus-quantity" onclick="plusQuantity(0)">+</span>
+                                        <span event-minus-quantity class="minus btn-minus-quantity">-</span>
+                                        <input class="quantity-product text-center" value="1" readonly>
+                                        <span event-plus-quantity class="plus btn-plus-quantity">+</span>
                                     </div>
                                     <div class="col-lg-12 mt-2 mb-2">
                                         <div class="btn btn-outline-success">Заказать</div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="product1" class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeInUp">
-                                <h4>Бургер пицца</h4>
-                                <div class="row">
-                                    <div class="col p-3 img-pizza">
-                                        <img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
-                                    </div>
-                                    <div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
-                                        <span>Цена: <span class="total_price_product">108грн.</span></span>
-                                    </div>
-                                    <div id="composition-pizza1" class="col-lg-12 caption-composition"><h4>Состав
-                                        пиццы:</h4>
-                                    </div>
-                                    <div class="col" id="compositionpizza1" style="display: none;"><p
-                                            class="text-lowercase composition-product border-light-green-color">
-                                        МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
-                                    <div class="col-lg-12">
-                                        <form name="formchoose" class="form form-radbtn border-light-green-color">
-                                            <legend>Выбери размер пиццы:</legend>
-                                            <input type="radio" id="c-3-0" name="order" value="108" checked=""
-                                                   onclick="changeSelectRadioButton(1);">
-                                            <label for="c-3-0"><span></span>108грн. (330г.)</label>
-                                            <input type="radio" id="c-4-0" name="order" value="145"
-                                                   onclick="changeSelectRadioButton(1);">
-                                            <label for="c-4-0"><span></span>145грн. (610г.)</label>
-                                            <input type="radio" id="c-5-0" name="order" value="200"
-                                                   onclick="changeSelectRadioButton(1);">
-                                            <label for="c-5-0"><span></span>200грн. (880г.)</label>
-                                        </form>
-                                    </div>
-                                    <div class="col-lg-12 text-color-quantity ">
-                                        <h5>Количество:</h5>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <span class="minus btn-minus-quantity" onclick="minusQuantity(1)">-</span>
-                                        <input value="1" class="quantity-product text-center " readonly>
-                                        <span class="plus btn-plus-quantity" onclick="plusQuantity(1)">+</span>
-                                    </div>
-                                    <div class="col-lg-12 mt-2 mb-2">
-                                        <div class="btn btn-outline-success">Заказать</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="product2" class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeInUp">
-                                <div class="row">
-                                    <div class="col"><h4>Бургер пицца</h4></div>
-                                    <div class="col p-3 img-pizza">
-                                        <img src="img/Pizza img/burgerpizza.png" alt="burgerpizza" height="80">
-                                    </div>
-                                    <div class="col price-on-card font-weight-bold border-bottom border-top mr-3 ml-3">
-                                        <span>Цена: <span class="total_price_product">108грн.</span></span>
-                                    </div>
-                                    <div id="composition-pizza2" class="col-lg-12 caption-composition"><h4>Состав
-                                        пиццы:</h4></div>
-                                    <div class="col" id="compositionpizza2" style="display: none;"><p
-                                            class="text-lowercase composition-product border-light-green-color">
-                                        МОЦАРЕЛЛА, СОУС БУРГЕР, ГОВЯДИНА, БЕКОН, ЛУК</p></div>
-                                    <div class="col-lg-12">
-                                        <form name="formchoose" class="form form-radbtn border-light-green-color">
-                                            <legend>Выбери размер пиццы:</legend>
-                                            <input type="radio" id="c-6-0" name="order" value="108" checked
-                                                   onclick="changeSelectRadioButton(2);">
-                                            <label for="c-6-0"><span></span>108грн. (330г.)</label>
-                                            <input type="radio" id="c-7-0" name="order" value="145"
-                                                   onclick="changeSelectRadioButton(2);">
-                                            <label for="c-7-0"><span></span>145грн. (610г.)</label>
-                                            <input type="radio" id="c-8-0" name="order" value="200"
-                                                   onclick="changeSelectRadioButton(2);">
-                                            <label for="c-8-0"><span></span>200грн. (880г.)</label>
-                                        </form>
-                                    </div>
-                                    <div class="col-lg-12 text-color-quantity">
-                                        <h5>Количество:</h5>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <span class="minus btn-minus-quantity" onclick="minusQuantity(1)">-</span>
-                                        <input value="1" class="quantity-product text-center " readonly>
-                                        <span class="plus btn-plus-quantity" onclick="plusQuantity(1)">+</span>
-                                    </div>
-                                    <div class="col-lg-12 mt-2 mb-2">
-                                        <div class="btn btn-outline-success">Заказать</div>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- END GENERATE INNER -->
                         </div>
                     </div>
                     <!-- next page -->
@@ -285,7 +152,14 @@
     </div>
 </footer>
 <!-- ./Footer -->
+
+<script type="application/javascript" src="libs/js/jquery.min.js"></script>
+<script type="application/javascript" src="libs/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="js/content.js"></script>
+<script type="application/javascript" src="js/generatecontent.js"></script>
+<!--<script type="application/javascript" src="js/function.js"></script>-->
 <script>
+    // TODO Rewritten
     $(document).ready(function () {
         $("#composition-pizza0").click(function () {
             if ($("#compositionpizza0").is(":hidden")) {
