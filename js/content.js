@@ -1,7 +1,6 @@
 const offers = [
     {
         "img": "img/Pizza img/burgerpizza.png",
-        "alt": "Бургер-Пицца",
         "name": "Бургер Пицца",
         "composition": "моцарелла, соус бургер, говядина, бекон, лук",
         "category": "pizza",
@@ -13,7 +12,6 @@ const offers = [
     },
     {
         "img": "img/Pizza img/chicken kesopizza.png",
-        "alt": "Чикен Кесо",
         "name": "Чикен Кесо",
         "composition": "моцарелла, соус сырный, курица, бекон, томат",
         "choose": [
@@ -24,7 +22,6 @@ const offers = [
     },
     {
         "img": "img/Pizza img/alimarpizza.png",
-        "alt": "Аль-Мар",
         "name": "Аль-Мар",
         "composition": "моцарелла, креветки, кальмар, осьминог, перец сладкий. маринованный огурец",
         "choose": [
@@ -35,7 +32,6 @@ const offers = [
     },
     {
         "img": "img/Pizza img/barbekupizza.png",
-        "alt": "Барбекю-Мясная",
         "name": "Барбекю-Мясная",
         "composition": "моцарелла, говядина, колбаса пеперони, ветчина, соус барбекю",
         "choose": [
@@ -46,7 +42,6 @@ const offers = [
     },
     {
         "img": "img/Pizza img/gurmanpizza.png",
-        "alt": "Гурман",
         "name": "Гурман",
         "composition": "моцарелла, бекон, ветчина, томат, яйцо, лук",
         "choose": [
@@ -57,7 +52,6 @@ const offers = [
     },
     {
         "img": "img/Pizza img/ispankapizza.png",
-        "alt": "Испанка",
         "name": "Испанка",
         "composition": "моцарелла, говядина копченая, колбаски копченые, огурцы маринованные",
         "choose": [

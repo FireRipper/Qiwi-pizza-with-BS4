@@ -1,23 +1,25 @@
-var contentPizza;
-var productHtml;
+let contentPizzaHtml;
+let productHtml;
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    contentPizza = $('#content-pizza');
+    contentPizzaHtml = $('#content-pizza');
     productHtml = $('#content-pizza > div');
 
     generateProductsHtml();
 
     $('.tabs a').on('shown.bs.tab', function (e) {
+        // e.target.hash.substr(1) - name
         generateProductsHtml(); // TODO name tab
     });
 });
 
 function generateProductsHtml(category = null) {
-    contentPizza.html('');
+    contentPizzaHtml.html('');
 
-    // TODO Filter offers
+    // TODO Filter category
     // TODO Structure, functions*
     // TODO Perfomance?
+    // TODO Process (loading)
 
     offers.forEach(function (o, index) {
         const div = productHtml.clone();
@@ -67,7 +69,8 @@ function generateProductsHtml(category = null) {
                 $(this).attr('onclick', 'changeSelectRadioButton(' + index + ');');
                 $(this).removeAttr('attr-form-id');
             });
-            $(this).find('[attr-form-for]').each(function () {
+            $(this).find('[attr-form-for]').each(function (i) {
+                $(this).html('<span></span>' + o.choose[i].desc);
                 $(this).attr('for', 'c-' + index + '-' + +$(this).attr('attr-form-for'));
                 $(this).removeAttr('attr-form-for');
             });
@@ -81,6 +84,8 @@ function generateProductsHtml(category = null) {
             $(this).attr('onclick', 'plusQuantity(' + index + ');');
         });
 
-        contentPizza.append(div);
+        contentPizzaHtml.append(div);
     });
+
+    // TODO End process loading
 }
