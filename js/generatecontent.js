@@ -1,120 +1,91 @@
+let contentPizzaHtml;
+let productHtml;
+
 document.addEventListener("DOMContentLoaded", (event) => {
-    fillOffers();
+    contentPizzaHtml = $('#content-pizza');
+    productHtml = $('#content-pizza > div');
+
+    generateProductsHtml();
 
     $('.tabs a').on('shown.bs.tab', function (e) {
-        fillOffers(); // TODO name tab
+        // e.target.hash.substr(1) - name
+        generateProductsHtml(); // TODO name tab
     });
 });
 
-function fillOffers(category = null) {
-    const blockContent = document.getElementById('blockcontent');
+function generateProductsHtml(category = null) {
+    contentPizzaHtml.html('');
 
-    // TODO Filter offers
+    // TODO Filter category
+    // TODO Structure, functions*
+    // TODO Perfomance?
+    // TODO Process (loading)
 
-    offers.forEach(o => {
+    offers.forEach(function (o, index) {
+        const div = productHtml.clone();
+        div.removeAttr('attr-id');
+        div.attr('id', 'product-' + index);
 
+        // Name
+        div.find('[inner-name]').each(function () {
+            this.innerText = o.name;
+            $(this).removeAttr('inner-name');
+        });
+
+        // Image
+        div.find('[attr-img]').each(function () {
+            $(this).attr('src', o.img);
+            $(this).removeAttr('attr-img');
+        });
+
+        // Price
+        div.find('[inner-price]').each(function () {
+            this.innerText = o.choose[0].val + 'грн.';
+            $(this).removeAttr('inner-price');
+        });
+
+        // ??
+        div.find('[attr-composition-0]').each(function () {
+            $(this).attr('id', 'composition-pizza' + index);
+            $(this).removeAttr('attr-composition-0');
+        });
+
+        // Button Composition
+        div.find('[attr-composition-1]').each(function () {
+            $(this).attr('id', 'compositionpizza' + index);
+            $(this).removeAttr('attr-composition-1');
+        });
+
+        // Composition
+        div.find('[inner-composition]').each(function () {
+            this.innerText = o.composition;
+            $(this).removeAttr('inner-composition');
+        });
+
+        // Form inputs
+        div.find('[attr-inputs-form]').each(function () {
+            $(this).find('[attr-form-id]').each(function () {
+                $(this).attr('id', 'c-' + index + '-' + +$(this).attr('attr-form-id'));
+                $(this).attr('onclick', 'changeSelectRadioButton(' + index + ');');
+                $(this).removeAttr('attr-form-id');
+            });
+            $(this).find('[attr-form-for]').each(function (i) {
+                $(this).html('<span></span>' + o.choose[i].desc);
+                $(this).attr('for', 'c-' + index + '-' + +$(this).attr('attr-form-for'));
+                $(this).removeAttr('attr-form-for');
+            });
+        });
+
+        div.find('[event-minus-quantity]').each(function () {
+            $(this).attr('onclick', 'minusQuantity(' + index + ');');
+        });
+
+        div.find('[event-plus-quantity]').each(function () {
+            $(this).attr('onclick', 'plusQuantity(' + index + ');');
+        });
+
+        contentPizzaHtml.append(div);
     });
 
-    console.log(blockContent)
+    // TODO End process loading
 }
-
-// function fillOffers(category = null) {
-//     let blockContent = document.getElementById('blockcontent');
-//     blockContent.innerText = '';
-//
-//     let content = offers
-//
-//     if (category) {
-//         content = offers.filter(function (o) {
-//             if (o.category !== category) {
-//                 return false;
-//             }
-//         })
-//     }
-//
-//     content.forEach((offer, index) => {
-//         const i = index % 2 === 0 ? 1 : 2;
-//
-//         let div = document.createElement('div');
-//         div.id = 'product' + index;
-//         div.className = 'content content' + i;
-//
-//         div.appendChild(getImg(offer));
-//         div.appendChild(getNamePizza(offer, i));
-//         div.appendChild(getDescription(offer));
-//         div.appendChild(getChoosePizza(offer, index));
-//         div.appendChild(getAmountOrder(index));
-//
-//         blockContent.appendChild(div)
-//     })
-// }
-//
-// function getImg(offer) {
-//     let img = document.createElement('img');
-//
-//     img.src = offer.img;
-//     img.alt = offer.alt;
-//     img.title = offer.alt;
-//
-//     return img
-// }
-//
-// function getNamePizza(offer, i) {
-//     let div = document.createElement('div');
-//     div.className = 'name_pizza_c' + i;
-//
-//     let nameProduct = document.createElement('div');
-//     nameProduct.className = 'name_product_pizza';
-//     nameProduct.innerHTML = offer.name;
-//
-//     let totalPrice = document.createElement('div');
-//     totalPrice.className = 'total_price';
-//     totalPrice.innerHTML = `<span>Цена:<br><span class="total_price_product">${offer.choose[0].val}грн.</span></span>`;
-//
-//     div.appendChild(nameProduct);
-//     div.appendChild(totalPrice);
-//
-//     return div
-// }
-//
-// function getDescription(offer) {
-//     let p = document.createElement('p');
-//     p.innerHTML = `<span>Состав:</span><br>${offer.composition}`;
-//
-//     return p
-// }
-//
-// function getChoosePizza(offer, i) {
-//     let div = document.createElement('div');
-//     div.className = 'choosesizepizza';
-//
-//     let form = document.createElement('form');
-//     form.name = 'formchoose';
-//     form.className = 'product';
-//
-//     offer.choose.forEach((c, index) => {
-//         const id = 'c-' + index + '-' + i;
-//         form.innerHTML += `<input type="radio" id="${id}" name="order" value="${c.val}" ${index === 0 ? 'checked' : ''}
-//                                 onclick="changeSelectRadioButton(${i});" />`;
-//         form.innerHTML += `<label for="${id}"><span></span>${c.val}грн. ${c.desc}</label><br>`
-//     });
-//
-//     div.appendChild(form);
-//
-//     return div
-// }
-//
-// function getAmountOrder(index) {
-//     let div = document.createElement('div');
-//
-//     div.className = 'amountorder';
-//     div.innerHTML = '<div class="colvo">Количество:</div>' +
-//         '            <div class="product-quantity">' +
-//         '              <span class="btn minus" onclick="minusQuantity(' + index + ')">-</span>' +
-//         '              <input value="1" class="quantity" readonly>' +
-//         '              <span class="btn plus" onclick="plusQuantity(' + index + ')">+</span>' +
-//         '            </div>' +
-//         '            <a class="buttonz" onclick="additionOfGoods(' + index + ')">Заказать</a>';
-//
-//     return div
-// }
