@@ -44,7 +44,7 @@ function generateProductsHtml(category = null) {
             $(this).removeAttr('inner-price');
         });
 
-        // ??
+        // Product composition
         div.find('[attr-composition-0]').each(function () {
             $(this).attr('id', 'composition-pizza' + index);
             $(this).removeAttr('attr-composition-0');
@@ -70,7 +70,7 @@ function generateProductsHtml(category = null) {
                 $(this).removeAttr('attr-form-id');
             });
             $(this).find('[attr-form-for]').each(function (i) {
-                $(this).html('<span></span>' + o.choose[i].desc);
+                $(this).html('<span class="mr-1"></span>' + o.choose[i].val + 'грн.' + o.choose[i].desc);
                 $(this).attr('for', 'c-' + index + '-' + +$(this).attr('attr-form-for'));
                 $(this).removeAttr('attr-form-for');
             });
