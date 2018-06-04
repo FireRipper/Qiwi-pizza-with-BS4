@@ -1,39 +1,107 @@
-#contentpayment, .widhttext1 {
-    float: right;
-    width: 980px;
+#payment-info img {
+    border-radius: 7px;
+    height: 255px;
 }
 
-#contentpayment {
-    height: 100%;
-    margin: 10px 15px 10px 5px;
-    padding: 0 15px ;
-    background: #fff;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+#img-bank-card {
+    border-right: 0;
+    border-left: 0;
 }
 
-.imgdicl {
-    display: inline-block;
-    margin-right: 20px;
-    vertical-align: top;
-    width: 100%;
+#img-bank-card img {
+    height: 85px;
 }
 
-#contentpayment p {
-    margin: 1em 0;
+#payment-info h3 {
+    color: #76b900;
+    text-shadow: -1px -1px #FFF,
+               -2px -2px #FFF,
+               -1px 1px #FFF,
+               -2px 2px #FFF,
+               1px 1px #FFF,
+               2px 2px #FFF,
+               1px -1px #FFF,
+               2px -2px #FFF,
+               -3px -3px 2px #BBB,
+               -3px 3px 2px #BBB,
+               3px 3px 2px #BBB,
+               3px -3px 2px #BBB;
+} 
+
+@media screen and (max-width: 1199px) {
+    #payment-info img {
+        height: 200px;
+    }
+    #payment-info h3 {
+        font-size: 18px;
+    }
+    #payment-info p {
+        font-size: 14px;
+    } 
+    #img-bank-card img {
+        height: 80px;
+    }
 }
 
-.widhttext1 {
-    margin: 0 15px;
+@media screen and (max-width: 991px) {
+    #payment-info img {
+        height: 310px;
+    }
+    #img-bank-card img {
+        height: 65px;
+    }
 }
 
-.imgpayment {
-    display: inline-block;
-    vertical-align: top;
+@media screen and (max-width: 767px) {
+    #payment-info img {
+        height: 225px;
+    }
+    #img-bank-card img {
+        height: 50px;
+    }
 }
 
-.widhttext1 h2 {
-    color: #003f48;
-    margin: 5px;
-    padding: 5px;
-    font-size: 48px;
+@media screen and (max-width: 529px) {
+    #payment-info img {
+        height: 205px;
+    }
+    #img-bank-card img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    #payment-info img {
+        height: 155px;
+    } 
+    #img-bank-card img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #payment-info img {
+        height: 165px;
+    } 
+    #img-bank-card img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    #payment-info img {
+        height: 145px;
+    }
+    #img-bank-card img {
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #payment-info img {
+        height: 125px;
+    }
+    #img-bank-card img {
+        height: 38px;
+    }
 }
