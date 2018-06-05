@@ -3,7 +3,7 @@
 }
 
 #contact-info {
-    border-radius: 5px;
+    background: url(../../img/Pizza-Callback-bg.jpg) no-repeat;
 }
 
 #contact-info h2, h3 {
@@ -58,8 +58,14 @@
     }    
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 385px) {
     .border-img {
-        width: 300px;
+        width: 330px;
+    }    
+}
+
+@media screen and (max-width: 321px) {
+    .border-img {
+        width: 275px;
     }    
 }

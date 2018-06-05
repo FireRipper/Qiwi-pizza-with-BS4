@@ -69,12 +69,18 @@
           <div class="col-lg-9 bg-white shadow-sm border-light-green-color rounded bg-callback" id="callback-info">
              <div class="row">
                   <div class="col-lg-12">
-                    <form id="callback-form" method="POST" name="Callback">
+                    <form id="callback-form" class="needs-validation" method="POST" name="Callback" novalidate>
                       <div class="form-row">
                         <div class="col-md-12 my-2"><h1>Обратная связь</h1></div>
                         <div class="col-md-4 mb-3">
                           <label for="form_user_name">Имя</label>
                           <input type="text" class="form-control border-light-green-color" name="f[text]" id="form_user_name" placeholder="Имя" required>
+                          <div class="valid-feedback">
+                            Поле заполнено!
+                          </div>
+                          <div class="invalid-feedback">
+                              Это поле обязательное для заполнения!
+                          </div>
                         </div>
                         <div class="col-md-4 mb-3">
                           <label for="form_user_telephone">Телефон:</label>
@@ -82,18 +88,36 @@
                             <div class="input-group-prepend">
                               <span class="input-group-text border-light-green-color" id="inputGroupPrepend2">+380</span>
                             </div>
-                            <input type="text" name="f[text]" class="form-control border-light-green-color" id="form_user_telephone" placeholder="993423232" aria-describedby="inputGroupPrepend2" required>
+                            <input type="text" name="f[phone]" class="form-control border-light-green-color" id="form_user_telephone" placeholder="993423232" aria-describedby="inputGroupPrepend2" min="9" required>
+                            <div class="valid-feedback">
+                            Поле заполнено!
+                            </div>
+                            <div class="invalid-feedback">
+                                Это поле обязательное для заполнения!
+                            </div>
                           </div>
                         </div>
                         <div class="col-md-4 mb-3">
                           <label for="form_user_e-mail">E-mail:</label>
-                          <input type="text" name="f[text]" class="form-control border-light-green-color" id="form_user_e-mail" placeholder="name@example.com" required>
+                            <input type="text" name="f[e-mail]" class="form-control border-light-green-color" id="form_user_e-mail" placeholder="name@example.com" required>
+                            <div class="valid-feedback">
+                                Поле заполнено!
+                            </div>
+                            <div class="invalid-feedback">
+                                Это поле обязательное для заполнения!
+                            </div>
                         </div>
                       </div>
                       <div class="form-row">
                         <div class="col-md-12 mb-3">
-                          <label for="form_user_text_revie">Сообщение:</label>
+                          <label for="form_user_text_review">Сообщение:</label>
                           <textarea name="f[msg]" id="form_user_text_review" class="form-control border-light-green-color" cols="30" rows="8" required></textarea>
+                          <div class="valid-feedback">
+                            Поле заполнено!
+                          </div>
+                          <div class="invalid-feedback">
+                              Это поле обязательное для заполнения!
+                          </div>
                         </div>
                          <div class="col-md-3 mb-3">
                           <button class="btn btn-outline-success" type="submit">Отравить</button>
@@ -120,5 +144,6 @@
 <!-- ./Footer -->
 <script type="application/javascript" src="../libs/js/jquery.min.js"></script>
 <script type="application/javascript" src="../libs/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="../js/functions.js"></script>
 </body>
 </html>
