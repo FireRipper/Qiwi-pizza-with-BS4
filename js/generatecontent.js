@@ -4,7 +4,7 @@ let productHtml;
 document.addEventListener("DOMContentLoaded", (event) => {
     contentPizzaHtml = $('#content-pizza');
     productHtml = $('#content-pizza > div');
-
+    
     generateProductsHtml();
 
     $('.tabs a').on('shown.bs.tab', function (e) {
@@ -23,6 +23,7 @@ function generateProductsHtml(category = null) {
 
     offers.forEach(function (o, index) {
         const div = productHtml.clone();
+        
         div.removeAttr('attr-id');
         div.attr('id', 'product-' + index);
 

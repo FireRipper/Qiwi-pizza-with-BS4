@@ -106,18 +106,18 @@
                                     </div>
                                     <div attr-composition-0 class="col-lg-12 caption-composition">
                                       <h4>Состав пиццы:</h4></div>
-                                    <div attr-composition-1 inner-composition class="col-lg-12 color" style="display: none;">
-                                        <p class="text-lowercase composition-product border-light-green-color"></p>
+                                    <div attr-composition-1 class="col-lg-12 color" style="display: none;">
+                                        <p inner-composition class="text-lowercase composition-product border-light-green-color"></p>
                                     </div>
                                     <div class="col-lg-12">
-                                        <form name="formchoose" class="form form-radbtn border-light-green-color" attr-inputs-form>
+                                        <form name="formchoose form-row" class="form form-radbtn border-light-green-color was-validated" attr-inputs-form>
                                         <legend>Выберите вес пиццы:</legend>
-                                            <input attr-form-id="0" type="radio" name="order" value="108" checked>
-                                            <label attr-form-for="0"></label>
-                                            <input attr-form-id="1" type="radio" name="order" value="145">
-                                            <label attr-form-for="1"></label>
-                                            <input attr-form-id="2" type="radio" name="order" value="200">
-                                            <label attr-form-for="2"></label>
+                                           <input attr-form-id="0" type="radio" name="order" value="108" checked>
+                                           <label attr-form-for="0"></label>
+                                           <input attr-form-id="1" type="radio" name="order" value="145">
+                                           <label attr-form-for="1"></label>
+                                           <input attr-form-id="2" type="radio" name="order" value="200">
+                                           <label attr-form-for="2"></label> 
                                         </form>
                                     </div>
                                     <div class="col-lg-12 text-color-quantity">
@@ -165,15 +165,6 @@
 <script type="application/javascript" src="libs/js/bootstrap.min.js"></script>
 <script type="application/javascript" src="js/content.js"></script>
 <script type="application/javascript" src="js/generatecontent.js"></script>
-<!--<script type="application/javascript" src="js/function.js"></script>-->
-<script>
-    // TODO Rewritten
-
-    $(document).ready(function () {
-        $("#composition-pizza0").click(function () {
-            $("#compositionpizza0").slideToggle(300);
-        });
-    });
-</script>
+<script type="application/javascript" src="js/functions.js"></script>
 </body>
 </html>

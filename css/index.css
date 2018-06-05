@@ -105,12 +105,10 @@ input[type = "radio"] + label span {
 
 input[type = "radio"]:hover + label span {
     background: url(../img/radiobtn-all.png) -19px no-repeat;
-    transition: all 0.20s ease;
 }
 
 input[type = "radio"]:checked + label span {
     background: url(../img/radiobtn-all.png) -38px no-repeat;
-    transition: all 0.20s ease;
 }
 
 .form-radbtn {

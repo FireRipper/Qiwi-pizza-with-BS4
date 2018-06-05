@@ -1,4 +1,4 @@
-function plusQuantity(index) {
+/*function plusQuantity(index) {
     const product = document.getElementById('product' + index);
     const quantity = product.getElementsByClassName('quantity')[0];
 
@@ -61,4 +61,12 @@ function additionOfGoods(index) {
         basket.getElementsByClassName('total_price_on_basket itm110' + index)[0].innerText ='Кол-во: ' + quantity.value 
         + ' шт. ' + parseInt(totalpricepizza.innerText) + ' грн.';
     }  
-}
+}*/
+
+$(document).ready(function () {
+    $('div').each(function (index) {
+        $("#composition-pizza" + index).click(function () {
+            $("#compositionpizza" + index).slideToggle(300);
+        })
+    });
+});
