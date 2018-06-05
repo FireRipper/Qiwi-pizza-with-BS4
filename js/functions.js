@@ -63,6 +63,8 @@ function additionOfGoods(index) {
     }  
 }*/
 
+
+//Show and hidden composition
 $(document).ready(function () {
     $('div').each(function (index) {
         $("#composition-pizza" + index).click(function () {

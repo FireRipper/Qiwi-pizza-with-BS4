@@ -1,0 +1,43 @@
+#callback-form label {
+	color: #76b900;
+}
+
+#callback-info h1 {
+	color: #76b900 !important;
+    text-shadow: -1px -1px #fff,
+    -2px -2px #fff,
+    -1px 1px #fff,
+    -2px 2px #fff,
+    1px 1px #fff,
+    2px 2px #fff,
+    1px -1px #fff,
+    2px -2px #fff,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB
+}
+
+.input-group-text {
+	background: #A2FF74;
+}
+
+.form-control:focus {
+  color: #495057;
+  border-color: #3CFF00;
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 4, 0.25);
+}
+
+.bg-callback {
+	background: url(../../img/Pizza-Callback-bg.jpg) center no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+	h1 {
+		text-align: center;
+		font-size: 2.2rem;
+	}
+	.btn {
+		background: #fff;
+	}
+}
