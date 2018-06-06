@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin-bottom: 70px;
+    margin-bottom: 180px;
     background: url(../img/bg.png);
 }
 
@@ -15,55 +15,59 @@ body {
 }
 
 .for-header-navbar {
-    border-bottom: 1px solid #3BFF60;
-    box-shadow: 0 1px 3px rgba(59, 255, 96, 0.62), 0 1px 2px rgba(59, 255, 96, 1);
+    border-bottom: 1px solid #76b900;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 .navbar-nav a {
-    border: 2px solid #3bff60;
-    border-radius: 10px;
-    color: #3bff60 !important;
+    border: 1px solid #76b900;
+    border-radius: 0.3rem;
+    color: #76b900 !important;
+    box-shadow: 0 1px 2px rgba(118, 185, 0, 0.6), 0 1px 2px rgba(118, 185, 0, 1);
     font-weight: bold;
 }
 
 .navbar-nav a:hover {
-    background-color: #3bff60;
+    background-color: #76b900;
     color: #fff !important;
-    transition: all 0.45s ease;
-}
-
-.navbar-nav a:active {
-    box-shadow: 0 1px 3px rgba(59, 255, 96, 0.62), 0 1px 2px rgba(59, 255, 96, 1.24)
+    transition: all 0.55s ease;
 }
 
 .callback-text {
     padding-left: 8px;
     list-style-type: none;
-    color: #3bff60;
     font-size: 17px;
+}
+
+.callback-text a {
+    color: #76b900;
+}
+
+.callback-text a:hover {
+    text-decoration: none;
+    color: #18F722;
 }
 
 /* second screen "content" */
 
 #menu-on-content a {
-    color: #3bff60;
+    color: #76b900;
 }
 
-.nav-tabs .nav-link.active {
-    border-color: #3bff60 #3bff60 !important;
-    background: #3bff60;
+#product-content .nav-tabs .nav-link.active {
+    border-color: #76b900 #76b900 !important;
+    background: #76b900;
     color: #fff !important;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
-.nav-link:hover {
-    border-color: #3bff60 #3bff60 !important
+#product-content .nav-link:hover {
+    border-color: #76b900 #76b900 !important;
 }
 
 .nav-tabs {
-    border-bottom: 1px solid #3bff60
+    border-bottom: 1px solid #76b900;
 }
 
 h2 {
@@ -71,9 +75,9 @@ h2 {
 }
 
 .price-on-card {
-    background: #fff;
+    background: #fff;   
     font-size: 20px;
-    color: #3bff60;
+    color: #418DFF;
 }
 
 .caption-composition > h4:hover {
@@ -204,6 +208,11 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     letter-spacing: 3px;
 }
 
+.text-basket-empty {
+    width: 100%; 
+    padding: 20px;
+}
+
 .name-product, .name-price {
     font-size: 1.05rem;
 }
@@ -273,6 +282,9 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     h5 {
         font-size: 1rem;
         word-wrap: break-word;
+    }
+     .text-in-footer {
+        text-align: center;
     }
 }
 
@@ -371,7 +383,25 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     color: #76b900;
     font-size: 20px;
     position: absolute;
+    padding: 15px 0;
     bottom: 0;
     width: 100%;
-    height: 60px;
+}
+
+#footer h2 {
+    text-shadow: none;
+}
+
+.social-icons a {
+    color: #76b900; 
+    padding: 0 6px;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.text-in-footer {
+    border-top: 1px solid #76b900;
+    margin: 0;
 }
