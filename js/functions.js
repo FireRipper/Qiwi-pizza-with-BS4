@@ -1,30 +1,4 @@
-
-/*function plusQuantity(index) {
-    const product = document.getElementById('product' + index);
-    const quantity = product.getElementsByClassName('quantity')[0];
-
-    const count = +quantity.value + 1;
-    quantity.value = count;
-
-    const cost = product.querySelector('input[name="order"]:checked').value;
-    product.getElementsByClassName('total_price_product')[0].innerText = cost * count + 'грн.'
-}
-
-function minusQuantity(index) {
-    // TODO Continue :)
-    const product = document.getElementById('product' + index);
-    const quantity = product.getElementsByClassName('quantity')[0];
-
-    const count = +quantity.value - 1;
-          count >= 1 ? quantity.value = count : '';
-
-    const cost = product.querySelector('input[name="order"]:checked').value;
-    let total_prod = product.getElementsByClassName('total_price_product')[0];
-    const price = parseInt(total_prod.innerText);
-    	  price > cost ? total_prod.innerText = price - cost + 'грн.' : ''
-}
-        
-
+/*
 function changeSelectRadioButton(index) {
     // TODO
     const product = document.getElementById('product' + index);
@@ -38,7 +12,7 @@ function additionOfGoods(index) {
     const product = document.getElementById('product' + index);
     const quantity = product.getElementsByClassName('quantity')[0];
     const basket = document.getElementById('basket_content_in');
-    const basketnamepizza = basket.getElementsByClassName('name_pizza_on_basket itm110' + index)[0];
+    const basketNamePizza = basket.getElementsByClassName('name_pizza_on_basket itm110' + index)[0];
     const basketpricepizza = basket.getElementsByClassName('total_price_on_basket itm110' + index)[0];
     let productnamepizza = product.getElementsByClassName('name_product_pizza')[0];
     let totalpricepizza = product.getElementsByClassName('total_price_product')[0];

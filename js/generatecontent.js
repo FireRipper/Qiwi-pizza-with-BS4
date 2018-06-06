@@ -68,12 +68,25 @@ function generateProductsHtml(category = null) {
             });
         });
 
-        div.find('[event-minus-quantity]').each(function () {
-            $(this).attr('onclick', 'minusQuantity(' + index + ');');
+        div.find('.minus').each(function () {
+            $(this).click(function () {
+                const quantity = div.find('.quantity-product')[0]
+
+                if (quantity.value > 1) {
+                    --quantity.value;
+
+                    // TODO get price:checked * quantity.value. Insert to .total_price_product.text(result)
+                }
+            });
         });
 
-        div.find('[event-plus-quantity]').each(function () {
-            $(this).attr('onclick', 'plusQuantity(' + index + ');');
+        div.find('.plus').each(function () {
+            $(this).click(function () {
+                const quantity = div.find('.quantity-product')[0];
+                ++quantity.value;
+
+                // TODO get price:checked * quantity.value. Insert to .total_price_product.text(result)
+            });
         });
 
         contentPizzaHtml.append(div);
