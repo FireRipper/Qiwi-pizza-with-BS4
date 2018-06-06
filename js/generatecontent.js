@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     generateProductsHtml();
 
     $('.tabs a').on('shown.bs.tab', function (e) {
-        // e.target.hash.substr(1) - name
+        // e.target.hash.substr(1) - name 
         generateProductsHtml(); // TODO name tab
     });
 });

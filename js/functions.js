@@ -38,6 +38,14 @@ function additionOfGoods(index) {
     }  
 }*/
 
+/*$(document).ready(function() {
+    $('div').each(function() {
+        $('.mobile-basket').click(function() {
+            $('#basket').slideToggle(200);
+        })
+    })
+});*/
+
 //Form check
 (function() {
     'use strict';

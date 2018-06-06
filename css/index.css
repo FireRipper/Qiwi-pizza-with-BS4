@@ -193,7 +193,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 }
 
 .bg-lime-green {
-    background: #3bff60;
+    background: #76b900;
 }
 
 /*basket*/
@@ -209,7 +209,10 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 #text-basket-header {
     font-size: 1.35rem;
     color: #fff;
-    letter-spacing: 3px;
+}
+
+.mobile-basket {
+    display: none;
 }
 
 .text-basket-empty {
@@ -219,13 +222,6 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 
 .name-product, .name-price {
     font-size: 1.05rem;
-}
-
-.basket-content-name img {
-    position: absolute;
-    left: -138px;
-    display: none;
-    cursor: pointer;
 }
 
 #basket-name-product-and-price {
@@ -248,9 +244,9 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 }
 
 .basket-btn .btn-outline-success:hover {
-    border: 1px solid #fff;
-    background: #28a745;
-    color: #fff;
+    box-shadow: 0 1px 3px rgba(59,59,59,0.3);
+    background: #343a40;
+    color: #76b900;
 }
 
 .total-price {
@@ -268,18 +264,16 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         vertical-align: middle;
     }
 
-    /*.basket-content-name img {
+    .mobile-basket {
+        display: inline-block;
         position: fixed;
-        left: 0;
-        top: 50%;
+        left: -5px;
+        top: 45%;
         width: 40px;
-        height: 112px;
+        height: auto;
         z-index: 35000;
-        width: 55px;
-        height: 62px;
-        left: -8px;
         cursor: pointer;
-    }*/
+    }
 }
 
 @media screen and (max-width: 768px) {
