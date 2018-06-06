@@ -45,22 +45,13 @@ function generateProductsHtml(category = null) {
             $(this).removeAttr('inner-price');
         });
 
-        // Product composition
-        div.find('[attr-composition-0]').each(function () {
-            $(this).attr('id', 'composition-pizza' + index);
-            $(this).removeAttr('attr-composition-0');
-        });
-
-        // Button Composition
-        div.find('[attr-composition-1]').each(function () {
-            $(this).attr('id', 'compositionpizza' + index);
-            $(this).removeAttr('attr-composition-1');
-        });
-
         // Composition
-        div.find('[inner-composition]').each(function () {
-            this.innerText = o.composition;
-            $(this).removeAttr('inner-composition');
+        div.find('[block-composition]').each(function () {
+            $(this).children().eq(0).click(function () {
+                $(this).next().slideToggle(300);
+            });
+            $(this).children().eq(1).children().text(o.composition);
+            $(this).removeAttr('event-composition');
         });
 
         // Form inputs

@@ -76,7 +76,7 @@ h2 {
     color: #3bff60;
 }
 
-.caption-composition :hover {
+.caption-composition > h4:hover {
     cursor: pointer;
     color: #57c1ff !important;
 }

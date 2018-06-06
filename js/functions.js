@@ -64,16 +64,6 @@ function additionOfGoods(index) {
     }  
 }*/
 
-
-//Show and hidden composition
-$(document).ready(function () {
-    $('div').each(function (index) {
-        $("#composition-pizza" + index).click(function () {
-            $("#compositionpizza" + index).slideToggle(300);
-        })
-    });
-});
-
 //Form check
 (function() {
     'use strict';

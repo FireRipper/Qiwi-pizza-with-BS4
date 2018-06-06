@@ -74,7 +74,7 @@
                         <div class="col-md-12 my-2"><h1>Обратная связь</h1></div>
                         <div class="col-md-4 mb-3">
                           <label for="form_user_name">Имя</label>
-                          <input type="text" class="form-control border-light-green-color" name="f[text]" id="form_user_name" placeholder="Имя" required>
+                          <input type="text" class="form-control border-light-green-color" name="f[text]" id="form_user_name" placeholder="Имя" pattern="[а-яА-ЯёЁ]{2,64}" required>
                           <div class="valid-feedback">
                             Поле заполнено!
                           </div>
@@ -88,7 +88,7 @@
                             <div class="input-group-prepend">
                               <span class="input-group-text border-light-green-color" id="inputGroupPrepend2">+380</span>
                             </div>
-                            <input type="text" name="f[phone]" class="form-control border-light-green-color" id="form_user_telephone" placeholder="993423232" aria-describedby="inputGroupPrepend2" min="9" required>
+                            <input type="text" name="f[phone]" class="form-control border-light-green-color" id="form_user_telephone" placeholder="993423232" aria-describedby="inputGroupPrepend2"  pattern="[0-9]{9,12}" required>
                             <div class="valid-feedback">
                             Поле заполнено!
                             </div>
