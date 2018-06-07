@@ -53,6 +53,22 @@ body {
     color: #18F722;
 }
 
+/* preloader */
+.preloader {
+    position: absolute;
+    top: 11%;
+    left: 0;
+    z-index: 2;
+    width: 853px;
+    height: 430px;
+    background-color: #fff;
+}
+
+.preloader img {
+    margin-top: 120px;
+    height: 280px;   
+}
+
 /* second screen "content" */
 
 #menu-on-content a {

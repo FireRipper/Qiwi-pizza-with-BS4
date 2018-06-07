@@ -93,4 +93,5 @@ function generateProductsHtml(category = null) {
     });
 
     // TODO End process loading
+    $('.preloader').fadeOut();
 }
