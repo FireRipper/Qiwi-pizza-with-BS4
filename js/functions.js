@@ -39,12 +39,23 @@ function additionOfGoods(index) {
 }*/
 
 /*$(document).ready(function() {
-    $('div').each(function() {
-        $('.mobile-basket').click(function() {
-            $('#basket').slideToggle(200);
-        })
+    $('.mobile-basket').click(function() {
+       if ($('#basket').is(':hidden')){
+            $('#basket').show('slow'); 
+        } else {
+            $('#basket').hide('slow'); 
+        }
     })
 });*/
+
+//Fixed basket
+$(window).scroll(function(){
+        if ($(this).scrollTop() > 55) {
+            $('#basket').addClass('fixed-basket');
+        } else {
+            $('#basket').removeClass('fixed-basket')
+        }
+    });
 
 //Form check
 (function() {

@@ -200,6 +200,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 #basket {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    width: 255px; 
 }
 
 #basket-header {
@@ -209,6 +210,11 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 #text-basket-header {
     font-size: 1.35rem;
     color: #fff;
+}
+
+.fixed-basket {
+    position: fixed;
+    top: 20px; 
 }
 
 .mobile-basket {
@@ -255,10 +261,24 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 1199px) {
+    #basket {
+        width: 220px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     #basket {
         display: none;
     }
+
+    /* #mobile-basket-fixed {
+        z-index: 35000;
+        position: fixed;
+        display: inline-block;
+        top: 30%;
+    } */
+
     .size-heigth-h2 {
         height: 64px;
         vertical-align: middle;
