@@ -367,6 +367,12 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         word-wrap: break-word;
         white-space: pre-wrap;
     }
+    .social-icons ul {
+        display: inline-flex !important;
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 389px ) {
@@ -385,6 +391,14 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .btn-minus-quantity, .btn-plus-quantity {
         width: 1.4rem;
         height: 1.6rem;
+    }
+    .social-icons ul {
+        display: inline-flex !important;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+    .text-in-footer {
+        font-size: 1rem;
     }
 }
 
@@ -429,13 +443,21 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     padding: 0 6px;
 }
 
+.social-icons ul li { 
+    border-right: 1px solid #76b900;
+}
+
+.social-icons ul li:last-child { 
+    border-right: 0;
+}
+
 .social-icons a:hover {
     color: #fff;
+    text-decoration: none;
 }
 
 .text-in-footer {
     border-top: 1px solid #76b900;
-    margin: 0;
 }
 
 .none {
