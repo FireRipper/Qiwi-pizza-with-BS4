@@ -16,10 +16,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 function generateProductsHtml(category = null) {
     contentPizzaHtml.html('');
 
-    // TODO Filter category
+    // TODO Filter category, page
     // TODO Structure, functions*
     // TODO Perfomance?
-    // TODO Process (loading)
+
+    preloader();
 
     offers.forEach(function (o, index) {
         const div = productHtml.clone();
@@ -92,6 +93,15 @@ function generateProductsHtml(category = null) {
         contentPizzaHtml.append(div);
     });
 
-    // TODO End process loading
-    $('.preloader').fadeOut();
+    preloader(false);
+}
+
+function preloader(start = true) {
+    if (start) {
+        $('.preloader').addClass('on');
+        $('#myTabContent').addClass('none');
+    } else {
+        $('.preloader').removeClass('on');
+        $('#myTabContent').removeClass('none');
+    }
 }

@@ -55,18 +55,16 @@ body {
 
 /* preloader */
 .preloader {
-    position: absolute;
-    top: 11%;
-    left: 0;
-    z-index: 2;
-    width: 853px;
-    height: 430px;
     background-color: #fff;
+    display: none;
+}
+
+.preloader.on {
+    display: block;
 }
 
 .preloader img {
-    margin-top: 120px;
-    height: 280px;   
+    height: 280px;
 }
 
 /* second screen "content" */
@@ -438,4 +436,8 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 .text-in-footer {
     border-top: 1px solid #76b900;
     margin: 0;
+}
+
+.none {
+    display: none;
 }
