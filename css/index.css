@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin-bottom: 160px;
+    margin-bottom: 152px;
     background: url(../img/bg.png);
 }
 
@@ -104,8 +104,10 @@ h2 {
 }
 
 .composition-product {
-    border-right: 0 !important;
-    border-left: 0 !important;
+    background: #EAEAEA;
+    color: #0065ff;
+    border-radius: 7px;
+    border: 1px solid #fff;
 }
 
 input[type="radio"] {
@@ -295,7 +297,9 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 
     .size-heigth-h2 {
         height: 64px;
-        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .mobile-basket {
@@ -343,7 +347,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         font-size: 0.85rem;
     }
     .composition-product {
-        font-size: 0.55rem;
+        font-size: 0.75rem;
     }
     .form-radbtn legend {
         font-size: 0.85rem;
@@ -373,6 +377,15 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         font-size: 1rem;
     }
 
+} 
+
+@media screen and (max-width: 425px ) {
+    .social-icons ul {
+        font-size: 0.9rem;
+    }
+    .text-in-footer {
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (max-width: 389px ) {
@@ -393,8 +406,6 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         height: 1.6rem;
     }
     .social-icons ul {
-        display: inline-flex !important;
-        flex-wrap: wrap;
         font-size: 0.8rem;
     }
     .text-in-footer {
@@ -420,6 +431,9 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     }
     h5 {
         font-size: 0.75rem; 
+    }
+    .social-icons ul {
+        font-size: 0.68rem;
     }
 }
 
@@ -460,6 +474,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     border-top: 1px solid #76b900;
 }
 
-.none {
-    display: none;
+.z-index-2-left-0 {
+    z-index: 2;
+    left: 0;
 }

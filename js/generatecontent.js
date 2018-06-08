@@ -99,9 +99,9 @@ function generateProductsHtml(category = null) {
 function preloader(start = true) {
     if (start) {
         $('.preloader').addClass('on');
-        $('#myTabContent').addClass('none');
+        $('#myTabContent').addClass('d-none');
     } else {
         $('.preloader').removeClass('on');
-        $('#myTabContent').removeClass('none');
+        $('#myTabContent').removeClass('d-none');
     }
 }
