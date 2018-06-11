@@ -245,8 +245,17 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     padding: 20px;
 }
 
+.basket-content-name, .basket-content-price, .text-basket-empty {
+    border-bottom: 1px solid #76b900;
+    color: #0065ff;
+}
+
 .name-product, .name-price {
     font-size: 1.05rem;
+}
+
+.basket-content-name {
+    word-wrap: break-word;
 }
 
 #basket-name-product-and-price {
@@ -377,7 +386,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         height: 1.7rem;
     }
     .btn {
-        font-size: 0.65rem;
+        font-size: 0.85rem;
         word-wrap: break-word;
         white-space: pre-wrap;
     }
@@ -421,6 +430,25 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .text-in-footer {
         font-size: 1rem;
     }
+    #basket-mobile-fixed {
+        top: 13%;
+        width: 195px;
+    }
+    .total-price {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.75rem;
+    }
+    #text-basket-header {
+        font-size: 1.2rem;
+    }
+    .name-product, .name-price{
+        font-size: 0.95rem;
+    }
+    .basket-content-name,.basket-content-price {
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -444,6 +472,9 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     }
     .social-icons ul {
         font-size: 0.68rem;
+    }
+    #basket-mobile-fixed {
+        width: 175px;
     }
 }
 
