@@ -38,15 +38,7 @@ function additionOfGoods(index) {
     }  
 }*/
 
-/*$(document).ready(function() {
-    $('.mobile-basket').click(function() {
-       if ($('#basket').is(':hidden')){
-            $('#basket').show('slow'); 
-        } else {
-            $('#basket').hide('slow'); 
-        }
-    })
-});*/
+/**/
 
 //Fixed basket
 $(window).scroll(function(){
@@ -56,6 +48,19 @@ $(window).scroll(function(){
             $('#basket').removeClass('fixed-basket')
         }
     });
+
+//Show and hidden basket on mobile device 
+$(document).ready(function() {
+    $('#icon-mobile-basket').click(function() {
+       if ($('#basket-mobile-fixed').is(':hidden')){
+            $('#basket-mobile-fixed').addClass('active-basket');
+            $('#menu-overlay').addClass('active-overlay');
+        } else {
+            $('#basket-mobile-fixed').removeClass('active-basket'); 
+            $('#menu-overlay').removeClass('active-overlay');
+        }
+    });
+});
 
 //Form check
 //Example starter JavaScript for disabling form submissions if there are invalid fields
