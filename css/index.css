@@ -216,6 +216,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     left: -100%;
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
+    display: inline-block;
 }
 
 /*basket*/
@@ -294,8 +295,8 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .active-basket {
         top: 20%;
         left: 17% !important;
-        display: inline-block !important;
     }
+
     .active-overlay {
         display: block !important;
     }
@@ -306,7 +307,6 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         left: -5px;
         top: 45%;
         width: 40px;
-        height: auto;
         z-index: 35000;
         cursor: pointer;
     }
