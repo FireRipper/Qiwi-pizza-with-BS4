@@ -1,11 +1,16 @@
-html {
-    position: relative;
+html, body {
     min-height: 100%;
 }
 
+html {
+    position: relative;
+    height: 100%;
+}
+
 body {
-    margin-bottom: 152px;
     background: url(../img/bg.png);
+    display: flex;
+    flex-direction: column;
 }
 
 /* header */
@@ -30,13 +35,13 @@ body {
     color: #76b900 !important;
     box-shadow: 0 1px 2px rgba(118, 185, 0, 0.6), 0 1px 2px rgba(118, 185, 0, 1);
     font-weight: bold;
+    transition: all 0.55s ease;
+    -webkit-transition: all 0.55s ease;
 }
 
 .navbar-nav a:hover {
     background-color: #76b900;
     color: #fff !important;
-    -webkit-transition: all 0.55s ease;
-    transition: all 0.55s ease;
 }
 
 .callback-text {
@@ -70,6 +75,10 @@ body {
 
 /* second screen "content" */
 
+#content {
+    flex-grow: 1;
+}
+
 #menu-on-content a {
     color: #76b900;
 }
@@ -94,7 +103,7 @@ h2 {
 }
 
 .price-on-card {
-    background: #fff;   
+    background: #fff;
     font-size: 20px;
     color: #418DFF;
 }
@@ -208,6 +217,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 .bg-lime-green {
     background: #76b900;
 }
+
 /* mobile-basket */
 #basket-mobile-fixed {
     width: 215px;
@@ -223,7 +233,11 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 #basket {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 255px; 
+    width: 255px;
+}
+
+.basket-inner {
+    width: 100%;
 }
 
 #basket-header {
@@ -237,11 +251,17 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 
 .fixed-basket {
     position: fixed;
-    top: 20px; 
+    /*top: 20px;*/
+    top: 0;
+}
+
+.fixed-basket-footer {
+    position: absolute;
+    bottom: 0;
 }
 
 .text-basket-empty {
-    width: 100%; 
+    width: 100%;
     padding: 20px;
 }
 
@@ -268,26 +288,27 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 
 .basket-btn-style {
     background: #76b900;
+    opacity: 1;
     color: #fff;
-    #76d300
 }
 
 .basket-btn-style:hover {
-    background: #76d300 ; 
-    box-shadow: 0 1px 3px rgba(59,59,59,0.3);
+    opacity: .9;
+    box-shadow: 0 1px 3px rgba(59, 59, 59, 0.3);
 }
 
 .total-price {
     background: #fff;
     color: #F31C1C;
     border-radius: 10px;
-    box-shadow: 1px 1px 2px rgba(255,255,255,1), -1px -1px 2px rgba(255,255,255,1);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 1), -1px -1px 2px rgba(255, 255, 255, 1);
 }
 
 @media only screen and (max-width: 1199px) {
     #basket {
         width: 220px;
     }
+
     .size-heigth-h2 {
         height: 64px;
         display: flex;
@@ -338,7 +359,8 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         font-size: 1rem;
         word-wrap: break-word;
     }
-     .text-in-footer {
+
+    .text-in-footer {
         text-align: center;
     }
 }
@@ -352,56 +374,69 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     h2 {
         font-size: 1.190rem;
     }
+
     .size-heigth-h2 {
         height: 49px;
     }
+
     .img-pizza {
         padding: 2px !important;
     }
+
     .img-pizza img {
         height: 2.2rem;
     }
+
     .price-on-card {
         margin: 0 !important;
         font-size: 0.85rem;
     }
+
     .composition-product {
         font-size: 0.75rem;
     }
+
     .form-radbtn legend {
         font-size: 0.85rem;
         padding: 0 1px;
     }
+
     .form label {
         font-size: 0.65rem;
     }
+
     h5 {
         font-size: 1rem;
     }
+
     .quantity-product {
         width: 50px;
     }
+
     .btn-minus-quantity, .btn-plus-quantity {
         width: 1.5rem;
         height: 1.7rem;
     }
+
     .btn {
         font-size: 0.85rem;
         word-wrap: break-word;
         white-space: pre-wrap;
     }
+
     .social-icons ul {
         display: inline-flex !important;
         flex-wrap: wrap;
         font-size: 1rem;
     }
 
-} 
+}
 
 @media screen and (max-width: 425px ) {
     .social-icons ul {
         font-size: 0.9rem;
     }
+
     .text-in-footer {
         font-size: 1.1rem;
     }
@@ -411,42 +446,54 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .form-radbtn legend {
         padding: 0 1px;
     }
+
     h2 {
-        font-size: 1rem;  
+        font-size: 1rem;
     }
+
     .size-heigth-h2 {
         height: 40px;
     }
+
     .quantity-product {
         width: 25px;
     }
+
     .btn-minus-quantity, .btn-plus-quantity {
         width: 1.4rem;
         height: 1.6rem;
     }
+
     .social-icons ul {
         font-size: 0.8rem;
     }
+
     .text-in-footer {
         font-size: 1rem;
     }
+
     #basket-mobile-fixed {
         top: 13%;
         width: 195px;
     }
+
     .total-price {
         font-size: 0.8rem;
     }
+
     .btn {
         font-size: 0.75rem;
     }
+
     #text-basket-header {
         font-size: 1.2rem;
     }
-    .name-product, .name-price{
+
+    .name-product, .name-price {
         font-size: 0.95rem;
     }
-    .basket-content-name,.basket-content-price {
+
+    .basket-content-name, .basket-content-price {
         font-size: 0.8rem;
     }
 }
@@ -460,19 +507,24 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         font-size: 0.65rem;
         padding: 0 1px;
     }
+
     .btn-minus-quantity, .btn-plus-quantity {
         width: 1.35rem;
         height: 1.7rem;
     }
+
     h4 {
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
     }
+
     h5 {
-        font-size: 0.75rem; 
+        font-size: 0.75rem;
     }
+
     .social-icons ul {
         font-size: 0.68rem;
     }
+
     #basket-mobile-fixed {
         width: 175px;
     }
@@ -483,10 +535,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 #footer {
     color: #76b900;
     font-size: 20px;
-    position: absolute;
     padding: 15px 0;
-    bottom: 0;
-    width: 100%;
 }
 
 #footer h2 {
@@ -494,15 +543,15 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 }
 
 .social-icons a {
-    color: #76b900; 
+    color: #76b900;
     padding: 0 6px;
 }
 
-.social-icons ul li { 
+.social-icons ul li {
     border-right: 1px solid #76b900;
 }
 
-.social-icons ul li:last-child { 
+.social-icons ul li:last-child {
     border-right: 0;
 }
 

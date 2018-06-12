@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Доставка пиццы, салатов, багетов КРУГЛОСУТОЧНО. Каждый день скидки на отдельную продукцию.">
+    <meta name="description"
+          content="Доставка пиццы, салатов, багетов КРУГЛОСУТОЧНО. Каждый день скидки на отдельную продукцию.">
     <title>Qiwi Pizza</title>
     <link rel="icon" href="img/Pizza-ico.ico" type="images/icon">
     <link rel="stylesheet" href="libs/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="libs/css/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="libs/file-for-icon/web-fonts-with-css/css/fontawesome-all.min.css" type="text/css">  
+    <link rel="stylesheet" href="libs/file-for-icon/web-fonts-with-css/css/fontawesome-all.min.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="css/sizecol.css" type="text/css">
 </head>
 <body>
 <!-- Header -->
-<header>
+<header class="mb-2">
     <nav id="menu-on-header" class="navbar navbar-expand-lg navbar-light bg-white for-header-navbar shadow-sm">
         <a class="navbar-brand" href="index.html">
             <img src="img/QiwiV1.png" alt="logo" id="logo-on-page">
@@ -45,39 +46,41 @@
     <div class="row border-light-green-color rounded bg-lime-green shadow-sm">
         <div id="mobile-basket-header" class="col-lg-12 d-flex justify-content-between p-1">
             <span id="text-basket-header" class="px-2 font-weight-bold">Ваш заказ:</span>
-            <img src="img/basket-header.png" alt="basket"  class="px-2">
+            <img src="img/basket-header.png" alt="basket" class="px-2">
         </div>
         <div id="basket-name-product-and-price" class="col-lg-12 d-flex justify-content-around shadow-sm bg-white">
-                        <span class="name-product">Товар:</span>
-                        <span class="name-price">Цена:</span>
-                    </div>
-                    <span class="text-basket-empty text-center bg-white">Корзина пуста!</span>
-                    <div class="col-6 basket-content-name bg-white"></div>
-                    <div class="col-6 basket-content-price text-center bg-white">
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-between py-1 bg-white"
-                         id="basket-total-price">
-                        <span class="font-weight-bold p-1">К оплате:</span><span
-                            class="total-price p-1 border-light-green-color">0 грн.</span>
-                    </div>
-                    <div class="col-lg-12 bg-white py-2 rounded-bottom">
-                        <div class="btn shadow-sm basket-btn-style font-weight-bold">Оформить заказ</div>
-                    </div>
+            <span class="name-product">Товар:</span>
+            <span class="name-price">Цена:</span>
+        </div>
+        <span class="text-basket-empty text-center bg-white">Корзина пуста!</span>
+        <div class="col-6 basket-content-name bg-white"></div>
+        <div class="col-6 basket-content-price text-center bg-white">
+        </div>
+        <div class="col-lg-12 d-flex justify-content-between py-1 bg-white"
+             id="basket-total-price">
+            <span class="font-weight-bold p-1">К оплате:</span><span
+                class="total-price p-1 border-light-green-color">0 грн.</span>
+        </div>
+        <div class="col-lg-12 bg-white py-2 rounded-bottom">
+            <div class="btn shadow-sm basket-btn-style font-weight-bold">Оформить заказ</div>
+        </div>
     </div>
 </div>
-<div><img src="img/ligth-icon-basket-mobile.png" alt="basket-mobile" id="icon-mobile-basket" class="d-none shadow-sm"></div>
+<div><img src="img/ligth-icon-basket-mobile.png" alt="basket-mobile" id="icon-mobile-basket" class="d-none shadow-sm">
+</div>
 <!-- Content -->
-<section>
-    <div class="container mt-2 rounded">
-        <div class="row my-2" id="menu-on-content">
-            <div class="col-lg-3">
+<div id="content">
+    <div class="container rounded">
+        <div class="row" id="menu-on-content">
+            <div class="col-lg-3 basket-outer">
                 <div id="basket" class="row border-light-green-color rounded bg-lime-green shadow-sm">
                     <div id="basket-header"
                          class="col-lg-12 d-flex justify-content-between p-1 font-weight-bold">
                         <span id="text-basket-header" class="px-2">Ваш заказ:</span>
-                        <img src="img/basket-header.png" alt="basket"  class="px-2">
+                        <img src="img/basket-header.png" alt="basket" class="px-2">
                     </div>
-                    <div id="basket-name-product-and-price" class="col-lg-12 d-flex justify-content-around shadow-sm bg-white">
+                    <div id="basket-name-product-and-price"
+                         class="col-lg-12 d-flex justify-content-around shadow-sm bg-white">
                         <span class="name-product">Товар:</span>
                         <span class="name-price">Цена:</span>
                     </div>
@@ -118,10 +121,12 @@
                     <img src="img/preloader/bolt.gif" alt="preload">
                 </div>
                 <div class="tab-content d-none" id="myTabContent">
-                    <div class="tab-pane fade show active" id="pizza" role="tabpanel" aria-labelledby="pizza-tab" onclick="">
+                    <div class="tab-pane fade show active" id="pizza" role="tabpanel" aria-labelledby="pizza-tab"
+                         onclick="">
                         <div id="content-pizza" class="row justify-content-around">
                             <!-- START GENERATE INNER -->
-                            <div attr-id class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeInUp">
+                            <div attr-id
+                                 class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeInUp">
                                 <div class="row">
                                     <div class="col-lg-12 size-heigth-h2 mt-2">
                                         <h2 inner-name></h2>
@@ -134,19 +139,22 @@
                                     </div>
                                     <div block-composition class="col-lg-12 caption-composition">
                                         <h4>Состав пиццы:</h4>
-                                        <div class="col-lg-12 color position-absolute z-index-2-left-0" style="display: none;">
+                                        <div class="col-lg-12 color position-absolute z-index-2-left-0"
+                                             style="display: none;">
                                             <p class="text-lowercase composition-product shadow"></p>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <form name="formchoose form-row" class="form form-radbtn border-light-green-color was-validated" attr-inputs-form>
-                                        <legend>Выберите вес пиццы:</legend>
-                                           <input attr-form-id="0" type="radio" name="order" value="108" checked>
-                                           <label attr-form-for="0"></label>
-                                           <input attr-form-id="1" type="radio" name="order" value="145">
-                                           <label attr-form-for="1"></label>
-                                           <input attr-form-id="2" type="radio" name="order" value="200">
-                                           <label attr-form-for="2"></label>
+                                        <form name="formchoose form-row"
+                                              class="form form-radbtn border-light-green-color was-validated"
+                                              attr-inputs-form>
+                                            <legend>Выберите вес пиццы:</legend>
+                                            <input attr-form-id="0" type="radio" name="order" value="108" checked>
+                                            <label attr-form-for="0"></label>
+                                            <input attr-form-id="1" type="radio" name="order" value="145">
+                                            <label attr-form-for="1"></label>
+                                            <input attr-form-id="2" type="radio" name="order" value="200">
+                                            <label attr-form-for="2"></label>
                                         </form>
                                     </div>
                                     <div class="col-lg-12 text-color-quantity">
@@ -154,7 +162,8 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <span class="minus btn-minus-quantity border-light-green-color">-</span>
-                                        <input class="quantity-product text-center border-light-green-color" value="1" readonly>
+                                        <input class="quantity-product text-center border-light-green-color" value="1"
+                                               readonly title="Количество">
                                         <span class="plus btn-plus-quantity border-light-green-color">+</span>
                                     </div>
                                     <div class="col-lg-12 my-2">
@@ -175,32 +184,39 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- ./Content -->
 <!-- Footer -->
-<footer id="footer" class="footer border-top text-center bg-dark">
+<footer id="footer" class="footer border-top text-center bg-dark mt-2">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 social-icons">
-                    <h2>Присоединятесь к нам:</h2>
-                    <ul class="d-flex list-unstyled justify-content-center">
-                            <li><a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fab fa-twitter-square fa-lg"></i> Twitter</a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fab fa-instagram fa-lg"></i> Instagram</a></li>
-                            <li><a href="https://telegram.org/" target="_blank" rel="noopener"><i class="fab fa-telegram fa-lg"></i> Telegram</a></li>
-                            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-square fa-lg"></i> Facebook</a></li>
-                    </ul>
+                <h2>Присоединятесь к нам:</h2>
+                <ul class="d-flex list-unstyled justify-content-center">
+                    <li><a href="https://twitter.com/" target="_blank" rel="noopener"><i
+                            class="fab fa-twitter-square fa-lg"></i> Twitter</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"><i
+                            class="fab fa-instagram fa-lg"></i> Instagram</a></li>
+                    <li><a href="https://telegram.org/" target="_blank" rel="noopener"><i
+                            class="fab fa-telegram fa-lg"></i> Telegram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
+                            class="fab fa-facebook-square fa-lg"></i> Facebook</a></li>
+                </ul>
             </div>
             <div class="col-lg-12 text-left">
                 <p class="text-in-footer m-0">© 2018 «Qiwi Pizza»</p>
+                <!-- Place this tag where you want the button to render. -->
+                <!--<a class="github-button" href="https://github.com/FireRipper/Qiwi-pizza-with-BS4" data-show-count="true" aria-label="Star FireRipper/Qiwi-pizza-with-BS4 on GitHub">Star</a>-->
             </div>
         </div>
     </div>
 </footer>
 <!-- ./Footer -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 <script type="application/javascript" src="libs/js/jquery.min.js"></script>
 <script type="application/javascript" src="libs/js/bootstrap.min.js"></script>
 <script type="application/javascript" src="js/content.js"></script>
-<script type="application/javascript" src="js/generatecontent.js"></script> 
+<script type="application/javascript" src="js/generatecontent.js"></script>
 <script type="application/javascript" src="js/functions.js"></script>
 </body>
 </html>

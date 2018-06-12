@@ -41,37 +41,58 @@ function additionOfGoods(index) {
 /**/
 
 //Fixed basket
-$(window).scroll(function(){
-        if ($(this).scrollTop() > 55) {
-            $('#basket').addClass('fixed-basket');
-        } else {
+$(window).scroll(function () {
+    const heightHeader = $('header').outerHeight(true);
+    const heightFooter = $('footer').outerHeight(true);
+    const heightBasket = $('#basket').outerHeight(true);
+    const heightWindow = $('body').height();
+    const scrollTop = $(this).scrollTop();
+
+    console.log(heightBasket)
+
+    const isBot = scrollTop < heightWindow - heightFooter - heightBasket;
+
+    if (scrollTop > heightHeader) {
+        if (!isBot) {
+            $('#basket').addClass('fixed-basket-footer');
             $('#basket').removeClass('fixed-basket')
+        } else {
+            $('#basket').addClass('fixed-basket');
+            $('#basket').removeClass('fixed-basket-footer');
         }
-    });
+    } else {
+        $('.basket-outer').removeClass('fixed-basket-footer');
+        $('#basket').removeClass('fixed-basket')
+    }
+});
 
 //Show and hidden basket on mobile device 
-$(document).ready(function() {
-    $('#icon-mobile-basket').click(function() {
-       if ($('#basket-mobile-fixed').hasClass('active-basket')){
-            $('#basket-mobile-fixed').removeClass('active-basket'); 
+$(document).ready(function () {
+    $('#icon-mobile-basket').click(function () {
+        if ($('#basket-mobile-fixed').hasClass('active-basket')) {
+            $('#basket-mobile-fixed').removeClass('active-basket');
             $('#menu-overlay').removeClass('active-overlay');
         } else {
-            $('#basket-mobile-fixed').addClass('active-basket'); 
+            $('#basket-mobile-fixed').addClass('active-basket');
             $('#menu-overlay').addClass('active-overlay');
+            $('.active-overlay').click(function () {
+                $('#basket-mobile-fixed').removeClass('active-basket');
+                $('#menu-overlay').removeClass('active-overlay');
+            });
         }
     });
 });
 
 //Form check
 //Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
+(function () {
     'use strict';
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
         let forms = document.getElementsByClassName('needs-validation');
         // Loop over them and prevent submission
-        Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
+        Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();
                     event.stopPropagation();
