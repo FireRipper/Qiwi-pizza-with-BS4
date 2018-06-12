@@ -34,10 +34,14 @@ function generateProductsHtml(category = null) {
             $(this).removeAttr('inner-name');
         });
 
-        // Image
+        // Image and alt for img
         div.find('[attr-img]').each(function () {
             $(this).attr('src', o.img);
             $(this).removeAttr('attr-img');
+        });
+        div.find('[attr-name]').each(function () {
+            $(this).attr('alt', o.name);
+            $(this).removeAttr('attr-name');
         });
 
         // Price
