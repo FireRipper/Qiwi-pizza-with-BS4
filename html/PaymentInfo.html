@@ -13,7 +13,7 @@
 </head>
 <body>
 <!-- Header -->
-<header>
+<header class="mb-2">
     <nav id="menu-on-header" class="navbar navbar-expand-lg navbar-light bg-white for-header-navbar">
         <a class="navbar-brand" href="../index.html">
             <img src="../img/QiwiV1.png" alt="logo" id="logo-on-page">
@@ -29,7 +29,7 @@
                 <a class="nav-item nav-link ml-2 mt-1" href="contact.html">Контакты</a>
                 <a class="nav-item nav-link ml-2 mt-1" href="callback.html">Обратная связь</a>
             </div>
-            <div class="pl-0 mt-1 d-flex"><img src="../img/callbackico.png" alt="callback" height="50">
+            <div class="pl-0 mt-1 d-flex"><img src="../img/callbackico.png" alt="callback">
                 <ul class="callback-text m-0 font-weight-bold">
                     <li><a href="tel:+0442666606">(044) 266-66-06</a></li>
                     <li><a href="tel:+0682666606">(068) 266-66-06</a></li>
@@ -43,40 +43,40 @@
 <div id="basket-mobile-fixed">
     <div class="row border-light-green-color rounded bg-lime-green shadow-sm">
         <div id="mobile-basket-header" class="col-lg-12 d-flex justify-content-between p-1">
-            <span id="text-basket-header" class="px-2 font-weight-bold">Ваш заказ:</span>
-            <img src="../img/basket-header.png" alt="basket"  class="px-2">
+            <span class="text-basket-header px-2 font-weight-bold">Ваш заказ:</span>
+            <img src="../img/basket-header.png" alt="basket" class="px-2">
         </div>
-        <div id="basket-name-product-and-price" class="col-lg-12 d-flex justify-content-around shadow-sm bg-white">
-                        <span class="name-product">Товар:</span>
-                        <span class="name-price">Цена:</span>
-                    </div>
-                    <span class="text-basket-empty text-center bg-white">Корзина пуста!</span>
-                    <div class="col-6 basket-content-name bg-white"></div>
-                    <div class="col-6 basket-content-price text-center bg-white">
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-between py-1 bg-white"
-                         id="basket-total-price">
-                        <span class="font-weight-bold p-1">К оплате:</span><span
-                            class="total-price p-1 border-light-green-color">0 грн.</span>
-                    </div>
-                    <div class="col-lg-12 bg-white py-2 rounded-bottom">
-                        <div class="btn shadow-sm basket-btn-style font-weight-bold">Оформить заказ</div>
-                    </div>
+        <div class="col-lg-12 d-flex justify-content-around shadow-sm bg-white basket-name-product-and-price">
+            <span class="name-product">Товар:</span>
+            <span class="name-price">Цена:</span>
+        </div>
+        <span class="text-basket-empty text-center bg-white">Корзина пуста!</span>
+        <div class="col-6 basket-content-name bg-white"></div>
+        <div class="col-6 basket-content-price text-center bg-white">
+        </div>
+        <div class="col-lg-12 d-flex justify-content-between py-1 bg-white basket-total-price">
+            <span class="font-weight-bold p-1">К оплате:</span><span
+                class="total-price p-1 border-light-green-color">0 грн.</span>
+        </div>
+        <div class="col-lg-12 bg-white py-2 rounded-bottom">
+            <div class="btn shadow-sm btn-lime-style font-weight-bold">Оформить заказ</div>
+        </div>
     </div>
 </div>
-<div><img src="../img/ligth-icon-basket-mobile.png" alt="basket-mobile" id="icon-mobile-basket" class="d-none shadow-sm"></div>
+<div><img src="../img/ligth-icon-basket-mobile.png" alt="basket-mobile" id="icon-mobile-basket" class="d-none shadow-sm">
+</div>
 <!-- Content -->
-<section>
-    <div class="container mt-2 mb-2 rounded">
+<div id="content">
+    <div class="container rounded">
         <div class="row" id="menu-on-content">
-            <div class="col-lg-3">
+            <div class="col-lg-3 basket-outer">
                 <div id="basket" class="row border-light-green-color rounded bg-lime-green shadow-sm">
                     <div id="basket-header"
                          class="col-lg-12 d-flex justify-content-between p-1 font-weight-bold">
-                        <span id="text-basket-header" class="px-2">Ваш заказ:</span>
-                        <img src="../img/basket-header.png" alt="basket"  class="px-2">
+                        <span class="px-2 text-basket-header">Ваш заказ:</span>
+                        <img src="../img/basket-header.png" alt="basket" class="px-2">
                     </div>
-                    <div id="basket-name-product-and-price" class="col-lg-12 d-flex justify-content-around shadow-sm bg-white">
+                    <div class="col-lg-12 d-flex justify-content-around shadow-sm bg-white basket-name-product-and-price">
                         <span class="name-product">Товар:</span>
                         <span class="name-price">Цена:</span>
                     </div>
@@ -84,13 +84,12 @@
                     <div class="col-6 basket-content-name"></div>
                     <div class="col-6 basket-content-price text-center">
                     </div>
-                    <div class="col-lg-12 d-flex justify-content-between py-1 bg-white"
-                         id="basket-total-price">
+                    <div class="col-lg-12 d-flex justify-content-between py-1 bg-white basket-total-price">
                         <span class="font-weight-bold p-1">К оплате:</span><span
                             class="total-price p-1 border-light-green-color">0 грн.</span>
                     </div>
                     <div class="col-lg-12 bg-white py-2 rounded-bottom">
-                        <div class="btn shadow-sm basket-btn-style">Оформить заказ</div>
+                        <div class="btn shadow-sm btn-lime-style">Оформить заказ</div>
                     </div>
                 </div>
             </div>
@@ -131,15 +130,15 @@
                 
                     <p>Более 15 миллионов держателей карт Visa по всему миру являются активными пользователями услуги Verified by Visa при совершении покупок в Интернете. Сегодня стандарт 3-D Secure Систему поддерживают более 100 тысяч Интернет-магазинов и более 20 тысяч банков по всему миру.</p>
                     <p>Заботясь о предоставлении нашим клиентам наиболее прогрессивных элементов онлайн-безопасности, мы внедрили этот стандарт и на нашем сайте. Оплата по картам Visa и MasterCard теперь максимально безопасны!</p>
-                    <a href="../index.html"><div class="btn btn-outline-success mb-3">Вернуться на главную и заказать вкусную пиццу!</div></a>
+                    <a href="../index.html"><div class="btn btn-lime-outline-style mb-3">Вернуться на главную и заказать вкусную пиццу!</div></a>
                 </div>
           </div>
     </div>
 </div>
-</section>
+</div>
 <!-- ./Content -->
 <!-- Footer -->
-<footer id="footer" class="footer border-top text-center bg-dark">
+<footer id="footer" class="footer border-top text-center bg-dark mt-2">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 social-icons">

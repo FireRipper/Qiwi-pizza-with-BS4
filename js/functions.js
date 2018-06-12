@@ -47,9 +47,7 @@ $(window).scroll(function () {
     const heightBasket = $('#basket').outerHeight(true);
     const heightWindow = $('body').height();
     const scrollTop = $(this).scrollTop();
-
-    console.log(heightBasket)
-
+    /*console.log(heightBasket)*/
     const isBot = scrollTop < heightWindow - heightFooter - heightBasket;
 
     if (scrollTop > heightHeader) {

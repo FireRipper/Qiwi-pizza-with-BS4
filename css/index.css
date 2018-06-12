@@ -224,6 +224,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     z-index: 35000;
     position: fixed;
     left: -100%;
+    top: 20%;
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
     display: inline-block;
@@ -244,7 +245,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     border-bottom: 0 !important;
 }
 
-#text-basket-header {
+.text-basket-header {
     font-size: 1.35rem;
     color: #fff;
 }
@@ -278,22 +279,35 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     word-wrap: break-word;
 }
 
-#basket-name-product-and-price {
+.basket-name-product-and-price {
     border-bottom: 1px solid #76b900;
 }
 
-#basket-total-price {
+.basket-total-price {
     color: #76b900;
 }
 
-.basket-btn-style {
+.btn-lime-outline-style {
+    background: #fff;
+    color: #76b900;
+    border: 1px solid #76b900;
+    -webkit-transition: all 0.77s;
+    transition: all 0.77s;
+}
+
+.btn-lime-outline-style:hover {
+    background: #76b800;
+    color: #fff;
+}
+
+.btn-lime-style {
     background: #76b900;
     opacity: 1;
     color: #fff;
 }
 
-.basket-btn-style:hover {
-    opacity: .9;
+.btn-lime-style:hover {
+    opacity: .8;
     box-shadow: 0 1px 3px rgba(59, 59, 59, 0.3);
 }
 
@@ -323,7 +337,6 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     }
 
     .active-basket {
-        top: 20%;
         left: 17% !important;
     }
 
@@ -485,7 +498,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         font-size: 0.75rem;
     }
 
-    #text-basket-header {
+    .text-basket-header {
         font-size: 1.2rem;
     }
 
