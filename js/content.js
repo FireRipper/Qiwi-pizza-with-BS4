@@ -1,8 +1,8 @@
 const offers = [
     {
-        "img": "img/pizza-img/burger_pizza.png",
+        "img": "img/pizza-img/no-photo-small.jpg",
         "name": "Бургер Пицца",
-        "composition": "моцарелла, соус бургер, говядина, бекон, лук",
+        "composition": "Фирменный соус, говяжий фарш, сыр моцарелла, маринованные огурчики, помидор",
         "category": "pizza",
         "choose": [
             { "val": 108, "desc": "(330г.)" },
@@ -11,9 +11,9 @@ const offers = [
         ]
     },
     {
-        "img": "img/pizza-img/chicken_keso_pizza.png",
-        "name": "Чикен Кесо",
-        "composition": "моцарелла, соус сырный, курица, бекон, томат",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "Куриная",
+        "composition": "Цезарь соус, сыр моцарелла, куриное филе, помидоры, сладкий перец, шампиньоны",
         "category": "pizza",
         "choose": [
             { "val": 98,  "desc": "(330г.)" },
@@ -22,9 +22,9 @@ const offers = [
         ]
     },
     {
-        "img": "img/pizza-img/alimar_pizza.png",
-        "name": "Аль-Мар",
-        "composition": "моцарелла, креветки, кальмар, осьминог, перец сладкий. маринованный огурец",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "Мясная ",
+        "composition": "Соус пилати, бекон, помидоры, сыр моцарелла, сладкий перец, говядина, ветчина, пепперони",
         "category": "pizza",
         "choose": [
             { "val": 115, "desc": "(330г.)" },
@@ -33,9 +33,9 @@ const offers = [
         ]
     },
     {
-        "img": "img/pizza-img/barbeku_pizza.png",
+        "img": "img/pizza-img/no-photo-small.jpg",
         "name": "Барбекю-Мясная",
-        "composition": "моцарелла, говядина, колбаса пеперони, ветчина, соус барбекю",
+        "composition": "Соус барбекю, говядина, сыр моцарелла, курица, сладкий перец, помидор",
         "category": "pizza",
         "choose": [
             { "val": 90, "desc": "(330г.)" },
@@ -44,9 +44,9 @@ const offers = [
         ]
     },
     {
-        "img": "img/pizza-img/gurman_pizza.png",
-        "name": "Гурман",
-        "composition": "моцарелла, бекон, ветчина, томат, яйцо, лук",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "Чили",
+        "composition": "Соус пилати, сыр моцарелла, говядина, маслины, халапеньо, колбаски пепперони",
         "category": "pizza",
         "choose": [
             { "val": 120, "desc": "(330г.)" },
@@ -55,14 +55,47 @@ const offers = [
         ]
     },
     {
-        "img": "img/pizza-img/ispanka_pizza.png",
-        "name": "Испанка",
-        "composition": "моцарелла, говядина копченая, колбаски копченые, огурцы маринованные",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "Четыре сыра",
+        "composition": "Соус пилати, сыры: пармезан, маасдам, дор-блю, моцарелла",
         "category": "pizza",
         "choose": [
             { "val": 96,  "desc": "(330г.)" },
             { "val": 185, "desc": "(610г.)" },
             { "val": 215, "desc": "(880г.)" }
+        ]
+    },
+    {
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "Грибная",
+        "composition": "Цезарь соус, сыр моцарелла, чеснок, помидоры, шампиньоны",
+        "category": "pizza",
+        "choose": [
+            { "val": 133, "desc": "(330г.)" },
+            { "val": 195, "desc": "(610г.)" },
+            { "val": 246, "desc": "(880г.)" }
+        ]
+    },
+    {
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "Пепперони",
+        "composition": "Соус пилати, сыр моцарелла, сладкий перец, шампиньоны, колбаски пепперони",
+        "category": "pizza",
+        "choose": [
+            { "val": 140, "desc": "(330г.)" },
+            { "val": 205, "desc": "(610г.)" },
+            { "val": 268, "desc": "(880г.)" }
+        ]
+    },
+    {
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "Гавайская",
+        "composition": "Соус пилати, сыр моцарелла, ветчина, ананас",
+        "category": "pizza",
+        "choose": [
+            { "val": 115, "desc": "(330г.)" },
+            { "val": 187, "desc": "(610г.)" },
+            { "val": 253, "desc": "(880г.)" }
         ]
     }
                                 /* Buggets*/
@@ -70,42 +103,42 @@ const offers = [
     {
         "img": "img/buggets-img/bugget-with-chicken.png",
         "name": "Сэндвич-багет с курицей",
-        "composition": "багет мягкий или багет мягкий темный, майонез, салат айсберг, сыр, помидоры, огурцы маринованные, филе курицы гриль",
+        "composition": "Багет мягкий или багет мягкий темный, майонез, салат айсберг, сыр, помидоры, огурцы маринованные, филе курицы гриль",
         "category": "bugget",
         "price": 55,
     },
     {
         "img": "img/buggets-img/bugget-with-buzhenina.jpg",
         "name": "Сэндвич-багет с бужениной",
-        "composition": "багет мягкий или багет мягкий темный, буженина, сыр, кукуруза, помидор, майонез горчица.",
+        "composition": "Багет мягкий или багет мягкий темный, буженина, сыр, кукуруза, помидор, майонез горчица.",
         "category": "bugget",
         "price": 40,
     },
     {
         "img": "img/buggets-img/bugget-with-vetchina.jpg",
         "name": "Сэндвич-багет с курицей",
-        "composition": "багет мягкий или багет мягкий темный, майонез, сыр, ветчина, зелень, базилик",
+        "composition": "Багет мягкий или багет мягкий темный, майонез, сыр, ветчина, зелень, базилик",
         "category": "bugget",
         "price": 43,
     },
     {
         "img": "img/buggets-img/bugget-with-cheese.png",
         "name": "Сэндвич-багет с сыром",
-        "composition": "багет мягкий или багет мягкий темный, помидоры, сыр, зелень, майонез",
+        "composition": "Багет мягкий или багет мягкий темный, помидоры, сыр, зелень, майонез",
         "category": "bugget",
         "price": 30,
     },
     {
         "img": "img/buggets-img/bugget-with-cheese-and-garlic.jpg",
         "name": "Сэндвич-багет с чесноком и сыром",
-        "composition": "багет мягкий или багет мягкий темный, сыр, чеснок, масло, зелень, специи",
+        "composition": "Багет мягкий или багет мягкий темный, сыр, чеснок, масло, зелень, специи",
         "category": "bugget",
         "price": 28,
     },
     {
         "img": "img/buggets-img/bugget-with-cheese-and-bacon.jpg",
         "name": "Сэндвич-багет с беконом и сыром",
-        "composition": "багет мягкий или багет мягкий темный, майонез, твердый сыр, бекон, зеленый лук",
+        "composition": "Багет мягкий или багет мягкий темный, майонез, твердый сыр, бекон, зеленый лук",
         "category": "bugget",
         "price": 35,
     },
