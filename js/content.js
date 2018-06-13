@@ -55,7 +55,7 @@ const offers = [
         ]
     },
     {
-        "img": "img/pizza-img/no-photo-small.jpg",
+        "img": "img/pizza-img/pizza-img-size-for-card/4-cheese-background-pizza-card.png",
         "name": "Четыре сыра",
         "composition": "Соус пилати, сыры: пармезан, маасдам, дор-блю, моцарелла",
         "category": "pizza",

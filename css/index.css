@@ -377,6 +377,9 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .text-in-footer {
         text-align: center;
     }
+    .img-pizza img {
+        width: 220px;
+    }
 }
 
 @media screen and (max-width: 530px) {
@@ -394,7 +397,8 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     }
 
     .img-pizza img {
-        height: 6.2rem;
+        width: 195px;
+        padding-bottom: 0.1rem; 
     }
 
     .price-on-card {
@@ -449,6 +453,9 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 
     .text-in-footer {
         font-size: 1.1rem;
+    }
+    .img-pizza img {
+        width: 180px;
     }
 }
 
@@ -506,6 +513,10 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .basket-content-name, .basket-content-price {
         font-size: 0.8rem;
     }
+
+    .img-pizza img {
+        width: 140px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -537,6 +548,10 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 
     #basket-mobile-fixed {
         width: 175px;
+    }
+
+    .img-pizza img {
+        width: 125px;
     }
 }
 
