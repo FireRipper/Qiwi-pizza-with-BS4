@@ -169,40 +169,55 @@ const offers = [
         "img": "img/salads-img/salad-with-telyatina.jpg",
         "name": "Салат с телятиной",
         "composition": "Телятина, помидор, перец, лук крымский, салат, пекинская капуста",
-        "category": "salad",
-        "weight-salad": "150г.",
-        "price": 42,
+        "category": "salads",
+        "choose": [
+            { "val": 42, "desc": "(150г.)" },
+            { "val": 78, "desc": "(215г.)" },
+            { "val": 98, "desc": "(300г.)" }
+        ]
     },
     {
         "img": "img/salads-img/salad-with-semga.jpg",
         "name": "Салат с семгой",
         "composition": "Салат, помидор, огурец, семга, кунжут, соус унаги",
-        "category": "salad",
-        "weight-salad": "120г.",
-        "price": 49,
+        "category": "salads",
+        "choose": [
+            { "val": 49, "desc": "(150г.)" },
+            { "val": 83, "desc": "(215г.)" },
+            { "val": 106, "desc": "(300г.)" }
+        ]
     },
     {
         "img": "img/salads-img/salad-grecheskii.jpg",
         "name": "Салат греческий",
         "composition": "Салат, маслины, сыр "Фета", помидор, огурец, перец, масло оливковое",
-        "category": "salad",
-        "weight-salad": "120г.",
-        "price": 36,
+        "category": "salads",
+        "choose": [
+            { "val": 38, "desc": "(150г.)" },
+            { "val": 60, "desc": "(215г.)" },
+            { "val": 89, "desc": "(300г.)" }
+        ]
     },
     {
         "img": "img/salads-img/salad-tsezar-with-chicken.jpg",
         "name": "Салат цезарь с курицой",
         "composition": "Салат, пекинская капуста, помидор, курица, соус",
-        "category": "salad",
-        "weight-salad": "120г.",
-        "price": 25,
+        "category": "salads",
+        "choose": [
+            { "val": 27, "desc": "(150г.)" },
+            { "val": 45, "desc": "(215г.)" },
+            { "val": 64, "desc": "(300г.)" }
+        ]
     },
     {
         "img": "img/salads-img/salad-ovoschnoj.jpg",
         "name": "Салат овощной",
         "composition": "Перец, помидор, огурец, салат, пекинская капуста",
-        "category": "salad",
-        "weight-salad": "120г.",
-        "price": 19,
+        "category": "salads",
+        "choose": [
+            { "val": 21, "desc": "(150г.)" },
+            { "val": 37, "desc": "(215г.)" },
+            { "val": 59, "desc": "(300г.)" }
+        ]
     },*/
 ]

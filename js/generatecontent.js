@@ -2,7 +2,7 @@
 const products = {
     'pizza': {},
     'buggets': {},
-    'set': {},
+    'set-of': {},
     'salads': {}
 }
 
@@ -120,11 +120,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
 })
 
-function generateBuggets(bugget, index) {
+const generateBuggets = (bugget, index) => {
 
 }
 
-function preloader(start = true) {
+const preloader = (start = true) => {
     if (start) {
         $('.preloader').addClass('on');
         $('#myTabContent').addClass('d-none');
