@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: url("../img/bg.png"); 
+    background: url("../img/img-for-all-page/bg.png");
     display: flex;
     flex-direction: column;
 }
@@ -136,16 +136,16 @@ input[type = "radio"] + label span {
     height: 22px;
     width: 20px;
     vertical-align: middle;
-    background: url(../img/radiobtn-all.png) no-repeat;
+    background: url(../img/img-for-all-page/radiobtn-all.png) no-repeat;
     cursor: pointer;
 }
 
 input[type = "radio"]:hover + label span {
-    background: url(../img/radiobtn-all.png) -19px no-repeat;
+    background: url(../img/img-for-all-page/radiobtn-all.png) -19px no-repeat;
 }
 
 input[type = "radio"]:checked + label span {
-    background: url(../img/radiobtn-all.png) -38px no-repeat;
+    background: url(../img/img-for-all-page/radiobtn-all.png) -38px no-repeat;
 }
 
 .form-radbtn {
