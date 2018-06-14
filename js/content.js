@@ -33,7 +33,7 @@ const offers = [
         ]
     },
     {
-        "img": "img/pizza-img/no-photo-small.jpg",
+        "img": "img/pizza-img/pizza-img-size-for-card/barbeku-pizza-bg-card.png",
         "name": "Барбекю-Мясная",
         "composition": "Соус барбекю, говядина, сыр моцарелла, курица, сладкий перец, помидор",
         "category": "pizza",
@@ -55,7 +55,7 @@ const offers = [
         ]
     },
     {
-        "img": "img/pizza-img/pizza-img-size-for-card/4-cheese-background-pizza-card.png",
+        "img": "img/pizza-img/pizza-img-size-for-card/4-cheese-pizza-bg-card.png",
         "name": "Четыре сыра",
         "composition": "Соус пилати, сыры: пармезан, маасдам, дор-блю, моцарелла",
         "category": "pizza",
@@ -97,52 +97,50 @@ const offers = [
             { "val": 187, "desc": "(610г.)" },
             { "val": 253, "desc": "(880г.)" }
         ]
-    }
+    },
                                 /* Buggets*/
-    /*,
     {
         "img": "img/buggets-img/bugget-with-chicken.png",
         "name": "Сэндвич-багет с курицей",
         "composition": "Багет мягкий или багет мягкий темный, майонез, салат айсберг, сыр, помидоры, огурцы маринованные, филе курицы гриль",
-        "category": "bugget",
+        "category": "buggets",
         "price": 55,
-    },
+    }/*,
     {
         "img": "img/buggets-img/bugget-with-buzhenina.jpg",
         "name": "Сэндвич-багет с бужениной",
         "composition": "Багет мягкий или багет мягкий темный, буженина, сыр, кукуруза, помидор, майонез горчица.",
-        "category": "bugget",
+        "category": "buggets",
         "price": 40,
     },
     {
         "img": "img/buggets-img/bugget-with-vetchina.jpg",
         "name": "Сэндвич-багет с курицей",
         "composition": "Багет мягкий или багет мягкий темный, майонез, сыр, ветчина, зелень, базилик",
-        "category": "bugget",
+        "category": "buggets",
         "price": 43,
     },
     {
         "img": "img/buggets-img/bugget-with-cheese.png",
         "name": "Сэндвич-багет с сыром",
         "composition": "Багет мягкий или багет мягкий темный, помидоры, сыр, зелень, майонез",
-        "category": "bugget",
+        "category": "buggets",
         "price": 30,
     },
     {
         "img": "img/buggets-img/bugget-with-cheese-and-garlic.jpg",
         "name": "Сэндвич-багет с чесноком и сыром",
         "composition": "Багет мягкий или багет мягкий темный, сыр, чеснок, масло, зелень, специи",
-        "category": "bugget",
+        "category": "buggets",
         "price": 28,
     },
     {
         "img": "img/buggets-img/bugget-with-cheese-and-bacon.jpg",
         "name": "Сэндвич-багет с беконом и сыром",
         "composition": "Багет мягкий или багет мягкий темный, майонез, твердый сыр, бекон, зеленый лук",
-        "category": "bugget",
+        "category": "buggets",
         "price": 35,
-    },
-    */
+    },*/
                                     /* Set of*/
     /*{
         "img": "img/set-of-img/set-of-5chesse.png",

@@ -173,6 +173,41 @@
                     </div>
                     <!-- next page -->
                     <div class="tab-pane fade" id="buggets" role="tabpanel" aria-labelledby="baguettes-tab">
+                        <div id="content-buggets" class="row justify-content-around">
+                            <div attr-id
+                                 class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeInUp">
+                                <div class="row">
+                                    <div class="col-lg-12 size-heigth-h2 mt-2">
+                                        <h2 inner-name></h2>
+                                    </div>
+                                    <div class="col-lg-12 p-0 img-pizza">
+                                        <img attr-img attr-name class="rounded">
+                                    </div>
+                                    <div class="col price-on-card font-weight-bold border-bottom border-top mx-3 my-2">
+                                        <span>Цена: <span inner-price class="total_price_product"></span></span>
+                                    </div>
+                                    <div block-composition class="col-lg-12 caption-composition">
+                                        <h4>Состав пиццы:</h4>
+                                        <div class="col-lg-12 color position-absolute z-index-2-left-0"
+                                             style="display: none;">
+                                            <p class="composition-product shadow"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 text-color-quantity">
+                                        <h5>Количество:</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <span class="minus btn-minus-quantity border-light-green-color">-</span>
+                                        <input class="quantity-product text-center border-light-green-color" value="1"
+                                               readonly title="Количество">
+                                        <span class="plus btn-plus-quantity border-light-green-color">+</span>
+                                    </div>
+                                    <div class="col-lg-12 my-2">
+                                        <div class="btn btn-lime-style">Заказать</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- inner from js --> Багеты
                     </div>
                     <div class="tab-pane fade" id="set" role="tabpanel" aria-labelledby="set-tab">Наборы</div>
@@ -184,7 +219,7 @@
 </div>
 <!-- ./Content -->
 <!-- Footer -->
-<footer id="footer" class="footer border-top text-center bg-dark mt-2">
+<footer id="footer" class="footer border-top text-center mt-2">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 social-icons">
