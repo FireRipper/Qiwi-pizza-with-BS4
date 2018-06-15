@@ -105,7 +105,7 @@ const offers = [
         "composition": "Багет мягкий или багет мягкий темный, майонез, салат айсберг, сыр, помидоры, огурцы маринованные, филе курицы гриль",
         "category": "buggets",
         "price": 55,
-    }/*,
+    },
     {
         "img": "img/buggets-img/bugget-with-buzhenina.jpg",
         "name": "Сэндвич-багет с бужениной",
@@ -140,9 +140,9 @@ const offers = [
         "composition": "Багет мягкий или багет мягкий темный, майонез, твердый сыр, бекон, зеленый лук",
         "category": "buggets",
         "price": 35,
-    },*/
-                                    /* Set of*/
-    /*{
+    },
+                                    /* Set of */
+    {
         "img": "img/set-of-img/set-of-5chesse.png",
         "name": "Пицца сэт №1",
         "composition": "Мини Пицца 5 сыров, мини Пицца деревенская, мини Пицца болоньезе",
@@ -163,9 +163,8 @@ const offers = [
         "category": "set-of",
         "price": 190,
     },
-    */
                                 /* Salads */
-    /*{
+    {
         "img": "img/salads-img/salad-with-telyatina.jpg",
         "name": "Салат с телятиной",
         "composition": "Телятина, помидор, перец, лук крымский, салат, пекинская капуста",
@@ -190,7 +189,7 @@ const offers = [
     {
         "img": "img/salads-img/salad-grecheskii.jpg",
         "name": "Салат греческий",
-        "composition": "Салат, маслины, сыр "Фета", помидор, огурец, перец, масло оливковое",
+        "composition": "Салат, маслины, сыр \"Фета\", помидор, огурец, перец, масло оливковое",
         "category": "salads",
         "choose": [
             { "val": 38, "desc": "(150г.)" },
@@ -219,5 +218,5 @@ const offers = [
             { "val": 37, "desc": "(215г.)" },
             { "val": 59, "desc": "(300г.)" }
         ]
-    },*/
+    }
 ]

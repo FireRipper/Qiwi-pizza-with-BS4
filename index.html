@@ -106,7 +106,7 @@
                            aria-controls="baguettes" aria-selected="false">Багеты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="set-tab" data-toggle="tab" href="#set" role="tab" aria-controls="set"
+                        <a class="nav-link" id="set-tab" data-toggle="tab" href="#set-of" role="tab" aria-controls="set-of"
                            aria-selected="false">Наборы</a>
                     </li>
                     <li class="nav-item">
@@ -119,16 +119,20 @@
                 </div>
                 <div class="tab-content d-none" id="myTabContent">
                     <div class="tab-pane fade show active" id="pizza" role="tabpanel" aria-labelledby="pizza-tab">
-                        Пицца <!-- inner from js -->
+                        <div class="row"></div>
+                        <!-- inner from js -->
                     </div>
                     <div class="tab-pane fade" id="buggets" role="tabpanel" aria-labelledby="baguettes-tab">
-                        Багеты <!-- inner from js -->
+                        <div class="row"></div>
+                        <!-- inner from js -->
                     </div>
-                    <div class="tab-pane fade" id="set" role="tabpanel" aria-labelledby="set-tab">
-                        Наборы <!-- inner from js -->
+                    <div class="tab-pane fade" id="set-of" role="tabpanel" aria-labelledby="set-tab">
+                        <div class="row"></div>
+                        <!-- inner from js -->
                     </div>
                     <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salads-tab">
-                        Салаты <!-- inner from js -->
+                        <div class="row"></div>
+                        <!-- inner from js -->
                     </div>
                 </div>
             </div>
@@ -162,12 +166,12 @@
     </div>
 </footer>
 <!-- ./Footer -->
+
 <!-- Skelets-cards -->
 <div id="skelets_card_all_products" class="d-none">
  <!-- Skelet-card-pizza-and-salads -->
-    <div id="skelets_cards-pizza-and-salads" class="row justify-content-around">
-        <div attr-id
-             class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeInUp">
+    <div id="skelet-general">
+        <div attr-id class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeInUp">
             <div class="row">
                 <div class="col-lg-12 size-heigth-h2 mt-2">
                     <h2 inner-name></h2>
@@ -215,7 +219,7 @@
     </div>
 <!-- ./skelet-card-pizza-and-salads -->
 <!-- skelet-card-buggets-and-sets -->
-    <div id="skelets_cards-buggets-and-set" class="row justify-content-around">
+    <div id="skelets-other" class="row justify-content-around">
         <div attr-id
                 class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeInUp">
             <div class="row">
