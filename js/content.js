@@ -100,73 +100,73 @@ const offers = [
     },
                                 /* Buggets*/
     {
-        "img": "img/buggets-img/bugget-with-chicken.png",
-        "name": "Сэндвич-багет с курицей",
-        "composition": "Багет мягкий или багет мягкий темный, майонез, салат айсберг, сыр, помидоры, огурцы маринованные, филе курицы гриль",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "С курицей",
+        "composition": "Багет, майонез, салат айсберг, сыр, помидоры, огурцы маринованные, филе курицы гриль",
         "category": "buggets",
         "price": 55,
     },
     {
-        "img": "img/buggets-img/bugget-with-buzhenina.jpg",
-        "name": "Сэндвич-багет с бужениной",
-        "composition": "Багет мягкий или багет мягкий темный, буженина, сыр, кукуруза, помидор, майонез горчица.",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "С бужениной",
+        "composition": "Багет, буженина, сыр, кукуруза, помидор, майонез горчица.",
         "category": "buggets",
         "price": 40,
     },
     {
-        "img": "img/buggets-img/bugget-with-vetchina.jpg",
-        "name": "Сэндвич-багет с курицей",
-        "composition": "Багет мягкий или багет мягкий темный, майонез, сыр, ветчина, зелень, базилик",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "С ветчиной",
+        "composition": "Багет, майонез, сыр, ветчина, зелень, базилик",
         "category": "buggets",
         "price": 43,
     },
     {
-        "img": "img/buggets-img/bugget-with-cheese.png",
-        "name": "Сэндвич-багет с сыром",
-        "composition": "Багет мягкий или багет мягкий темный, помидоры, сыр, зелень, майонез",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "С сыром и помидорами",
+        "composition": "Багет, помидоры, сыр, зелень, майонез",
         "category": "buggets",
         "price": 30,
     },
     {
-        "img": "img/buggets-img/bugget-with-cheese-and-garlic.jpg",
-        "name": "Сэндвич-багет с чесноком и сыром",
-        "composition": "Багет мягкий или багет мягкий темный, сыр, чеснок, масло, зелень, специи",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "С чесноком и сыром",
+        "composition": "Багет, сыр, чеснок, масло, зелень, специи",
         "category": "buggets",
         "price": 28,
     },
     {
-        "img": "img/buggets-img/bugget-with-cheese-and-bacon.jpg",
-        "name": "Сэндвич-багет с беконом и сыром",
-        "composition": "Багет мягкий или багет мягкий темный, майонез, твердый сыр, бекон, зеленый лук",
+        "img": "img/pizza-img/no-photo-small.jpg",
+        "name": "С беконом и сыром",
+        "composition": "Багет, майонез, твердый сыр, бекон, зеленый лук",
         "category": "buggets",
         "price": 35,
     },
                                     /* Set of */
     {
-        "img": "img/set-of-img/set-of-5chesse.png",
+        "img": "img/set-of-img/set-of-img-size-for-card/set-of-number-1-bg-card.png",
         "name": "Пицца сэт №1",
-        "composition": "Мини Пицца 5 сыров, мини Пицца деревенская, мини Пицца болоньезе",
+        "composition": "Мини Пицца \"Грибная\", мини Пицца \"Чили\", мини Пицца \"Мясная\"",
         "category": "set-of",
-        "price": 190,
+        "price": 295,
     },
     {
-        "img": "img/set-of-img/set-of-margarita-paperoni.png",
+        "img": "img/set-of-img/set-of-img-size-for-card/set-of-number-2-bg-card.png",
         "name": "Пицца сэт №2",
-        "composition": "Мини Пицца фирменная, мини Пицца Маргарита, мини Пицца Папперони",
+        "composition": "Мини Пицца \"Гавайская\", мини Пицца \"Барбекю-Мясная\", мини Пицца \"Четыре сыра\"",
         "category": "set-of",
-        "price": 180,
+        "price": 220,
     },
     {
-        "img": "img/set-of-img/set-of-pizza-ckicken-firm-bavarskaya.png",
+        "img": "img/set-of-img/set-of-img-size-for-card/set-of-number-3-bg-card.png",
         "name": "Пицца сэт №3",
-        "composition": "Мини Пицца куриная, мини Пицца испанка, мини Пицца Баварская",
+        "composition": "Мини Пицца \"Пепперони\", мини Пицца \"Бургер Пицца\", мини Пицца \"Куриная\"",
         "category": "set-of",
-        "price": 190,
+        "price": 280,
     },
                                 /* Salads */
     {
-        "img": "img/salads-img/salad-with-telyatina.jpg",
-        "name": "Салат с телятиной",
+        "img": "img/salads-img/salads-img-size-for-card/with-telyatina-salad-bg-card.png",
+        "name": "С телятиной",
         "composition": "Телятина, помидор, перец, лук крымский, салат, пекинская капуста",
         "category": "salads",
         "choose": [
@@ -176,8 +176,8 @@ const offers = [
         ]
     },
     {
-        "img": "img/salads-img/salad-with-semga.jpg",
-        "name": "Салат с семгой",
+        "img": "img/salads-img/salads-img-size-for-card/with-semga-salad-bg-card.png",
+        "name": "С семгой",
         "composition": "Салат, помидор, огурец, семга, кунжут, соус унаги",
         "category": "salads",
         "choose": [
@@ -187,8 +187,8 @@ const offers = [
         ]
     },
     {
-        "img": "img/salads-img/salad-grecheskii.jpg",
-        "name": "Салат греческий",
+        "img": "img/salads-img/salads-img-size-for-card/grecheskiy-salad-bg-card.png",
+        "name": "Греческий",
         "composition": "Салат, маслины, сыр \"Фета\", помидор, огурец, перец, масло оливковое",
         "category": "salads",
         "choose": [
@@ -198,8 +198,8 @@ const offers = [
         ]
     },
     {
-        "img": "img/salads-img/salad-tsezar-with-chicken.jpg",
-        "name": "Салат цезарь с курицой",
+        "img": "img/salads-img/salads-img-size-for-card/tsezar-with-chicken-salad-bg-card.png",
+        "name": "Цезарь с курицой",
         "composition": "Салат, пекинская капуста, помидор, курица, соус",
         "category": "salads",
         "choose": [
@@ -209,8 +209,8 @@ const offers = [
         ]
     },
     {
-        "img": "img/salads-img/salad-ovoschnoj.jpg",
-        "name": "Салат овощной",
+        "img": "img/salads-img/salads-img-size-for-card/ovoschnoj-salad-bg-card.png",
+        "name": "Овощной",
         "composition": "Перец, помидор, огурец, салат, пекинская капуста",
         "category": "salads",
         "choose": [

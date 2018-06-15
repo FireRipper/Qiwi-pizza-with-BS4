@@ -39,7 +39,7 @@ const generateGeneral = (obj, offer, index) => {
 
     // Composition
     skelet.find('[block-composition]').each(function () {
-        $(this).children().eq(0).click(() => {
+        $(this).children().eq(0).click(function(){
             $(this).next().slideToggle(300)
         })
         $(this).children().eq(1).children().text(offer.composition)
@@ -61,7 +61,7 @@ const generateGeneral = (obj, offer, index) => {
     })
 
     skelet.find('.minus').each(function () {
-        $(this).click(() => {
+        $(this).click(function() {
             const quantity = skelet.find('.quantity-product')[0]
 
             if (quantity.value > 1) {
@@ -73,7 +73,7 @@ const generateGeneral = (obj, offer, index) => {
     })
 
     skelet.find('.plus').each(function () {
-        $(this).click(() => {
+        $(this).click(function() {
             const quantity = skelet.find('.quantity-product')[0]
             ++quantity.value
 
@@ -141,7 +141,6 @@ const generateOther = (obj, offer, index) => {
             // TODO get price:checked * quantity.value. Insert to .total_price_product.text(result)
         })
     })
-    console.log(obj.content.append(skelet))
     obj.content.append(skelet)
 }
 

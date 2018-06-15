@@ -123,6 +123,11 @@ h2 {
     border: 1px solid #76b900;
 }
 
+.fixed-height-block-composition {
+    height: 115px;
+    align-items: center;
+}
+
 input[type="radio"] {
     display: none
 }
@@ -330,6 +335,9 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         justify-content: center;
         align-items: center;
     }
+    .fixed-height-block-composition {
+        height: 125px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -369,16 +377,21 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 }
 
 @media screen and (max-width: 768px) {
+    h4 { 
+        font-size: 1.35rem;
+    }
     h5 {
         font-size: 1rem;
         word-wrap: break-word;
     }
-
-    .text-in-footer {
-        text-align: center;
-    }
     .img-pizza img {
         width: 220px;
+    }
+    .fixed-height-block-composition {
+        height: 107px;
+    }
+    .text-in-footer {
+        text-align: center;
     }
 }
 
@@ -387,75 +400,68 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         font-size: 0.95rem;
         margin-top: 0.45rem;
     }
-
     h2 {
         font-size: 1.190rem;
     }
-
     .size-heigth-h2 {
         height: 49px;
     }
-
     .img-pizza img {
         width: 195px;
         padding-bottom: 0.1rem; 
     }
-
     .price-on-card {
         margin: 0 !important;
         font-size: 0.85rem;
     }
-
     .composition-product {
         font-size: 0.75rem;
     }
-
+    .fixed-height-block-composition {
+        height: 110px;
+    }
     .form-radbtn legend {
         font-size: 0.85rem;
         padding: 0 1px;
     }
-
     .form label {
         font-size: 0.65rem;
     }
-
     h5 {
         font-size: 1rem;
     }
-
     .quantity-product {
         width: 50px;
     }
-
     .btn-minus-quantity, .btn-plus-quantity {
         width: 1.5rem;
         height: 1.7rem;
     }
-
     .btn {
         font-size: 0.85rem;
         word-wrap: break-word;
         white-space: pre-wrap;
     }
-
     .social-icons ul {
         display: inline-flex !important;
         flex-wrap: wrap;
         font-size: 1rem;
     }
-
 }
 
 @media screen and (max-width: 425px ) {
+    .img-pizza img {
+        width: 180px;
+    }
+    .fixed-height-block-composition {
+        height: 90px;
+        font-size: 0.7rem;
+    }
     .social-icons ul {
         font-size: 0.9rem;
     }
-
     .text-in-footer {
         font-size: 1.1rem;
-    }
-    .img-pizza img {
-        width: 180px;
     }
 }
 
@@ -463,57 +469,48 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .form-radbtn legend {
         padding: 0 1px;
     }
-
     h2 {
         font-size: 1rem;
     }
-
     .size-heigth-h2 {
         height: 40px;
     }
-
+    .fixed-height-block-composition {
+        height: 95px;
+        font-size: 0.55rem;
+    }
     .quantity-product {
         width: 25px;
     }
-
     .btn-minus-quantity, .btn-plus-quantity {
         width: 1.4rem;
         height: 1.6rem;
     }
-
     .social-icons ul {
         font-size: 0.8rem;
     }
-
     .text-in-footer {
         font-size: 1rem;
     }
-
     #basket-mobile-fixed {
         top: 13%;
         width: 195px;
     }
-
     .total-price {
         font-size: 0.8rem;
     }
-
     .btn {
         font-size: 0.75rem;
     }
-
     .text-basket-header {
         font-size: 1.2rem;
     }
-
     .name-product, .name-price {
         font-size: 0.95rem;
     }
-
     .basket-content-name, .basket-content-price {
         font-size: 0.8rem;
     }
-
     .img-pizza img {
         width: 140px;
     }
@@ -523,33 +520,30 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     #logo-on-page {
         height: 40px;
     }
-
+    .fixed-height-block-composition {
+        height: 110px;
+        font-size: 0.55rem;
+    }
     .form-radbtn legend {
         font-size: 0.65rem;
         padding: 0 1px;
     }
-
     .btn-minus-quantity, .btn-plus-quantity {
         width: 1.35rem;
         height: 1.7rem;
     }
-
     h4 {
         font-size: 0.8rem;
     }
-
     h5 {
         font-size: 0.75rem;
     }
-
     .social-icons ul {
         font-size: 0.68rem;
     }
-
     #basket-mobile-fixed {
         width: 175px;
     }
-
     .img-pizza img {
         width: 125px;
     }
