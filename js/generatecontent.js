@@ -26,7 +26,7 @@ const generateGeneral = (obj, offer, index) => {
         $(this).attr('src', offer.img)
         $(this).removeAttr('attr-img')
     })
-    skelet.find('[attr-name]').each(() => {
+    skelet.find('[attr-name]').each(function () {
         $(this).attr('alt', offer.name)
         $(this).removeAttr('attr-name')
     })
@@ -87,11 +87,61 @@ const generateGeneral = (obj, offer, index) => {
 const generateOther = (obj, offer, index) => {
     const skelet = obj.skelet.html.clone()
 
-    skelet.find('[inner-name]').each(() => {
+    skelet.removeAttr('attr-id')
+    skelet.attr('id', 'product-' + index)
+
+    // Name
+    skelet.find('[inner-name]').each(function () {
         this.innerText = offer.name
         $(this).removeAttr('inner-name')
     })
 
+    // Image and alt for img
+    skelet.find('[attr-img]').each(function () {
+        $(this).attr('src', offer.img)
+        $(this).removeAttr('attr-img')
+    })
+    skelet.find('[attr-name]').each(function () {
+        $(this).attr('alt', offer.name)
+        $(this).removeAttr('attr-name')
+    })
+
+    // Price
+    skelet.find('[inner-price]').each(function () {
+        this.innerText = offer.price + 'грн.'
+        $(this).removeAttr('inner-price')
+    })
+
+    // Composition
+    skelet.find('[block-composition]').each(function () {
+        $(this).children().eq(0).click(function () {
+            $(this).next().slideToggle(300)
+        })
+        $(this).children().eq(1).children().text(offer.composition)
+        $(this).removeAttr('event-composition')
+    })
+
+    skelet.find('.minus').each(function () {
+        $(this).click(function () {
+            const quantity = skelet.find('.quantity-product')[0]
+
+            if (quantity.value > 1) {
+                --quantity.value
+
+                // TODO get price:checked * quantity.value. Insert to .total_price_product.text(result)
+            }
+        })
+    })
+
+    skelet.find('.plus').each(function () {
+        $(this).click(function () {
+            const quantity = skelet.find('.quantity-product')[0]
+            ++quantity.value
+
+            // TODO get price:checked * quantity.value. Insert to .total_price_product.text(result)
+        })
+    })
+    console.log(obj.content.append(skelet))
     obj.content.append(skelet)
 }
 
@@ -124,7 +174,7 @@ const products = {
         skelet: skelets.other
     },
     'salads': {
-        skelet: skelets.other
+        skelet: skelets.general
     }
 }
 
