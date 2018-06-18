@@ -105,7 +105,7 @@ h2 {
     font-size: 1.5rem;
 }
 
-.img-pizza {
+.card-img-products {
     overflow: hidden;
 }
 
@@ -120,13 +120,13 @@ h2 {
     transition: all .5s;
 }
 
-.img-pizza:hover .descr {
+.card-img-products:hover .descr {
     opacity: 1;
     top: 0;
     cursor: pointer;
 }
 
-.price-on-card {
+.card-price-produts {
     background: #fff;
     font-size: 20px;
     color: #418DFF;
@@ -433,10 +433,7 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .descr {
         padding: 50px;
     }
-    .img-pizza img {
-        padding-bottom: 0.1rem; 
-    }
-    .price-on-card {
+    .card-price-produts {
         margin: 0 !important;
         font-size: 0.85rem;
     }

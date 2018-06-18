@@ -50,14 +50,18 @@ const generateGeneral = (obj, offer, index) => {
     skelet.find('[attr-inputs-form]').each(function () {
         $(this).find('[attr-form-id]').each(function () {
             $(this).attr('id', 'c-' + index + '-' + +$(this).attr('attr-form-id'))
-            $(this).attr('onclick', 'changeSelectRadioButton(' + index + ')')
             $(this).removeAttr('attr-form-id')
+        })
+        $(this).find('[attr-form-input-value]').each(function(i){
+            $(this).attr('value', offer.choose[i].val)
+            $(this).removeAttr('attr-form-input-value')
         })
         $(this).find('[attr-form-for]').each(function (i) {
             $(this).html('<span class="mr-1"></span>' + offer.choose[i].val + 'грн.' + offer.choose[i].desc)
             $(this).attr('for', 'c-' + index + '-' + +$(this).attr('attr-form-for'))
             $(this).removeAttr('attr-form-for')
         })
+        $(this).removeAttr('attr-inputs-form')
     })
 
     skelet.find('.minus').each(function () {
