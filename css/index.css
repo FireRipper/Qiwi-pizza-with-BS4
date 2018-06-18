@@ -105,6 +105,27 @@ h2 {
     font-size: 1.5rem;
 }
 
+.img-pizza {
+    overflow: hidden;
+}
+
+.descr {
+    top: -10%;
+    left: 0;
+    right: 100%;
+    background-color: rgba(28, 31, 27, 0.3);
+    padding: 65px;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.img-pizza:hover .descr {
+    opacity: 1;
+    top: 0;
+    cursor: pointer;
+}
+
 .price-on-card {
     background: #fff;
     font-size: 20px;
@@ -384,8 +405,8 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         font-size: 1rem;
         word-wrap: break-word;
     }
-    .img-pizza img {
-        width: 220px;
+    .fa-clone {
+        font-size: 2rem;
     }
     .fixed-height-block-composition {
         height: 107px;
@@ -406,8 +427,13 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .size-heigth-h2 {
         height: 49px;
     }
+    .fa-clone {
+        font-size: 1.6rem;
+    }
+    .descr {
+        padding: 50px;
+    }
     .img-pizza img {
-        width: 195px;
         padding-bottom: 0.1rem; 
     }
     .price-on-card {
@@ -450,8 +476,8 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 }
 
 @media screen and (max-width: 425px ) {
-    .img-pizza img {
-        width: 180px;
+    .fa-clone {
+        font-size: 1.3rem;
     }
     .fixed-height-block-composition {
         height: 90px;
@@ -471,6 +497,9 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     }
     h2 {
         font-size: 1rem;
+    }
+    .descr {
+        padding: 40px;
     }
     .size-heigth-h2 {
         height: 40px;
@@ -511,14 +540,17 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     .basket-content-name, .basket-content-price {
         font-size: 0.8rem;
     }
-    .img-pizza img {
-        width: 140px;
-    }
 }
 
 @media only screen and (max-width: 320px) {
     #logo-on-page {
         height: 40px;
+    }
+    .fa-clone {
+        font-size: 1rem;
+    }
+    .descr {
+        padding: 30px;
     }
     .fixed-height-block-composition {
         height: 110px;
@@ -543,9 +575,6 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     }
     #basket-mobile-fixed {
         width: 175px;
-    }
-    .img-pizza img {
-        width: 125px;
     }
 }
 
