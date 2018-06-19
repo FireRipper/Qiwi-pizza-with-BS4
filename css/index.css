@@ -109,6 +109,20 @@ h2 {
     overflow: hidden;
 }
 
+/* .card-img-products-full-size {
+    z-index: 35000;
+    position: fixed;
+    left: -100%;
+    top: 10%;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+.active-card-img-full-size {
+    opacity: 1;
+} */
+
 .descr {
     top: -10%;
     left: 0;
@@ -345,6 +359,23 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
     box-shadow: 1px 1px 2px rgba(255, 255, 255, 1), -1px -1px 2px rgba(255, 255, 255, 1);
 }
 
+/* active overlay */
+.active-overlay {
+    display: block !important;
+}
+#menu-overlay {
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: #000;
+    cursor: pointer;
+}
+
+/* @media query */
 @media only screen and (max-width: 1199px) {
     #basket {
         width: 220px;
@@ -370,10 +401,6 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         left: 17% !important;
     }
 
-    .active-overlay {
-        display: block !important;
-    }
-
     #icon-mobile-basket {
         display: inline-block !important;
         position: fixed;
@@ -381,18 +408,6 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
         top: 45%;
         width: 40px;
         z-index: 35000;
-        cursor: pointer;
-    }
-
-    #menu-overlay {
-        position: fixed;
-        z-index: 3000;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.3;
-        background-color: #000;
         cursor: pointer;
     }
 }

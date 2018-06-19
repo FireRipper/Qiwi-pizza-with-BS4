@@ -1,5 +1,6 @@
 const offers = [
     {
+        "img_full": "img/pizza-img/pizza-img-full-size/burger-pizza-bg.png",
         "img": "img/pizza-img/pizza-img-size-for-card/burger-pizza-bg-card.png",
         "name": "Бургер Пицца",
         "composition": "Фирменный соус, говяжий фарш, сыр моцарелла, маринованные огурчики, помидор",
@@ -11,6 +12,7 @@ const offers = [
         ]
     },
     {
+        "img_full": "img/pizza-img/pizza-img-full-size/kurinaya-pizza-bg.png",
         "img": "img/pizza-img/pizza-img-size-for-card/kurinaya-pizza-bg-card.png",
         "name": "Куриная",
         "composition": "Цезарь соус, сыр моцарелла, куриное филе, помидоры, сладкий перец, шампиньоны",
@@ -22,6 +24,7 @@ const offers = [
         ]
     },
     {
+        "img_full": "img/pizza-img/pizza-img-full-size/masnaya-pizza-bg.png",
         "img": "img/pizza-img/pizza-img-size-for-card/masnaya-pizza-bg-card.png",
         "name": "Мясная ",
         "composition": "Соус пилати, бекон, помидоры, сыр моцарелла, сладкий перец, говядина, ветчина, пепперони",
@@ -33,6 +36,7 @@ const offers = [
         ]
     },
     {
+        "img_full": "img/pizza-img/pizza-img-full-size/barbeku-pizza-bg.png",
         "img": "img/pizza-img/pizza-img-size-for-card/barbeku-pizza-bg-card.png",
         "name": "Барбекю-Мясная",
         "composition": "Соус барбекю, говядина, сыр моцарелла, курица, сладкий перец, помидор",
@@ -44,6 +48,7 @@ const offers = [
         ]
     },
     {
+        "img_full": "img/pizza-img/pizza-img-full-size/chili-pizza-bg.png",
         "img": "img/pizza-img/pizza-img-size-for-card/chili-pizza-bg-card.png",
         "name": "Чили",
         "composition": "Соус пилати, сыр моцарелла, говядина, маслины, халапеньо, колбаски пепперони",
@@ -55,6 +60,7 @@ const offers = [
         ]
     },
     {
+        "img_full": "img/pizza-img/pizza-img-full-size/4-cheese-pizza-bg.png",
         "img": "img/pizza-img/pizza-img-size-for-card/4-cheese-pizza-bg-card.png",
         "name": "Четыре сыра",
         "composition": "Соус пилати, сыры: пармезан, маасдам, дор-блю, моцарелла",
@@ -66,6 +72,7 @@ const offers = [
         ]
     },
     {
+        "img_full": "img/pizza-img/pizza-img-full-size/gribnaya-pizza-bg.png",
         "img": "img/pizza-img/pizza-img-size-for-card/gribnaya-pizza-bg-card.png",
         "name": "Грибная",
         "composition": "Цезарь соус, сыр моцарелла, чеснок, помидоры, шампиньоны",
@@ -77,6 +84,7 @@ const offers = [
         ]
     },
     {
+        "img_full": "img/pizza-img/pizza-img-full-size/peperonyy-pizza-bg.png",
         "img": "img/pizza-img/pizza-img-size-for-card/peperonyy-pizza-bg-card.png",
         "name": "Пепперони",
         "composition": "Соус пилати, сыр моцарелла, сладкий перец, шампиньоны, колбаски пепперони",
@@ -88,6 +96,7 @@ const offers = [
         ]
     },
     {
+        "img_full": "img/pizza-img/pizza-img-full-size/gavayskaya-pizza-bg.png",
         "img": "img/pizza-img/pizza-img-size-for-card/gavayskaya-pizza-bg-card.png",
         "name": "Гавайская",
         "composition": "Соус пилати, сыр моцарелла, ветчина, ананас",

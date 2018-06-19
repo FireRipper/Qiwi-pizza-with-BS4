@@ -50,6 +50,7 @@ const generateGeneral = (obj, offer, index) => {
     skelet.find('[attr-inputs-form]').each(function () {
         $(this).find('[attr-form-id]').each(function () {
             $(this).attr('id', 'c-' + index + '-' + +$(this).attr('attr-form-id'))
+            $(this).attr('onclick', 'changeSelectRadioButton(' + index + ')')
             $(this).removeAttr('attr-form-id')
         })
         $(this).find('[attr-form-input-value]').each(function(i){
@@ -63,7 +64,7 @@ const generateGeneral = (obj, offer, index) => {
         })
         $(this).removeAttr('attr-inputs-form')
     })
-
+   
     skelet.find('.minus').each(function () {
         $(this).click(function() {
             const quantity = skelet.find('.quantity-product')[0]
@@ -125,13 +126,13 @@ const generateOther = (obj, offer, index) => {
         $(this).removeAttr('event-composition')
     })
 
+    //Click minus and plus
     skelet.find('.minus').each(function () {
-        $(this).click(function () {
+        $(this).click(function () { 
             const quantity = skelet.find('.quantity-product')[0]
 
             if (quantity.value > 1) {
                 --quantity.value
-
                 // TODO get price:checked * quantity.value. Insert to .total_price_product.text(result)
             }
         })
@@ -140,8 +141,8 @@ const generateOther = (obj, offer, index) => {
     skelet.find('.plus').each(function () {
         $(this).click(function () {
             const quantity = skelet.find('.quantity-product')[0]
-            ++quantity.value
 
+            ++quantity.value
             // TODO get price:checked * quantity.value. Insert to .total_price_product.text(result)
         })
     })
