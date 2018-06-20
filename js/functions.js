@@ -43,11 +43,11 @@ $(document).ready(function () {
 });
 
 function changeSelectRadioButton(index){
-    const product = document.getElementById('product-' + index);
-    const quantity = product.getElementsByClassName('quantity-product')[0].value = 1;
+    const product = $('#product-' + index);
+    product.find('.quantity-product').eq(0).val(1)
 
-    let choosecheked = product.querySelector('input[name="order"]:checked').value;
-    product.getElementsByClassName('total_price_product')[0].innerText = choosecheked + 'грн.'
+    const choosecheked = product.find('input[name="order"]:checked').val()
+    product.find('.total_price_product').eq(0).text(choosecheked + ' грн.')
 }
 
 //Form check
@@ -69,3 +69,4 @@ function changeSelectRadioButton(index){
         });
     }, false);
 })();
+

@@ -33,7 +33,7 @@ const generateGeneral = (obj, offer, index) => {
 
     // Price
     skelet.find('[inner-price]').each(function () {
-        this.innerText = offer.choose[0].val + 'грн.'
+        this.innerText = offer.choose[0].val + ' грн.'
         $(this).removeAttr('inner-price')
     })
 
@@ -64,7 +64,11 @@ const generateGeneral = (obj, offer, index) => {
         })
         $(this).removeAttr('attr-inputs-form')
     })
-   
+
+    skelet.find('[data-id]').each(function () {
+        $(this).attr('data-id', index)
+    })
+
     skelet.find('.minus').each(function () {
         $(this).click(function() {
             const quantity = skelet.find('.quantity-product')[0]
