@@ -555,9 +555,6 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 }
 
 @media only screen and (max-width: 320px) {
-    #logo-on-page {
-        height: 40px;
-    }
     .fa-clone {
         font-size: 1rem;
     }
