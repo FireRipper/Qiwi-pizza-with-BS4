@@ -109,20 +109,6 @@ h2 {
     overflow: hidden;
 }
 
-/* .card-img-products-full-size {
-    z-index: 35000;
-    position: fixed;
-    left: -100%;
-    top: 10%;
-    -webkit-transition: all 0.8s;
-    transition: all 0.8s;
-    opacity: 0;
-}
-
-.active-card-img-full-size {
-    opacity: 1;
-} */
-
 .descr {
     top: -10%;
     left: 0;
@@ -259,6 +245,20 @@ h4, h2, .text-color-quantity, .name-product, .name-price, .form-radbtn legend {
 
 .bg-lime-green {
     background: #76b900;
+}
+
+.page-link {
+    border: 1px solid #76b900;
+}
+
+.page-link:hover {
+    border-color: #76b900;
+}
+
+.page-item.active-page .page-link {
+    background: #76b900;
+    border-color: #76b900;
+    color: #fff !important;
 }
 
 /* mobile-basket */

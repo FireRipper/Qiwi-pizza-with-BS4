@@ -1,3 +1,70 @@
+$(document).ready(function () {
+    'use strict'
+
+    const quantityProduct = $('#pizza-products .count-product').length
+    const limitProductsOnPage = 6
+    const pagination = $('.pagination')
+    $('#pizza-products .count-product:gt(' + (limitProductsOnPage - 1) + ')').hide()
+    const totalProducts = Math.round(quantityProduct / limitProductsOnPage)
+    $(pagination).append('<li class="page-item current-page active-page"><a class="page-link" href="javascript:void(0)">' + 1 + '</a></li>')
+
+    for (let i = 2; i <= totalProducts; i++) {
+        $(pagination).append('<li class="page-item current-page"><a class="page-link" href="javascript:void(0)">' + i + '</a></li>')
+    }
+    $(pagination).append('<li class="page-item"><a id="next-page" class="page-link" href="javascript:void(0)" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>')
+
+    $('.pagination li.current-page').on('click', function () {
+        if ($(this).hasClass('active-page')) {
+            return false
+        } else {
+            let currentPage = $(this).index()
+            $('.pagination li').removeClass('active-page')
+            $(this).addClass('active-page')
+            $('#pizza-products .count-product').hide()
+
+            let grandTotal = limitProductsOnPage * currentPage
+            for (let i = grandTotal - limitProductsOnPage; i < grandTotal; i++) {
+                $('#pizza-products .count-product:eq(' + i + ')').show();
+            }
+        }
+    })
+
+    $('#previous-page').on('click', function () {
+        let currentActivePage = $('.pagination li.active-page').index()
+
+        if (currentActivePage === 1) {
+            return false
+        } else {
+            --currentActivePage
+            $('.pagination li').removeClass('active-page')
+            $('#pizza-products .count-product').hide()
+
+            let grandTotal = limitProductsOnPage * currentActivePage
+            for (let i = grandTotal - limitProductsOnPage; i < grandTotal; i++) {
+                $('#pizza-products .count-product:eq(' + i + ')').show();
+            }
+            $('.pagination li.current-page:eq('+ (currentActivePage - 1) +')').addClass('active-page')
+        }
+    })
+
+    $('#next-page').on('click', function () {
+        let currentActivePage = $('.pagination li.active-page').index()
+        
+        if (currentActivePage === totalProducts) {
+            return false
+        } else {
+            ++currentActivePage
+            $('.pagination li').removeClass('active-page')
+            $('#pizza-products .count-product').hide()
+
+            let grandTotal = limitProductsOnPage * currentActivePage
+            for (let i = grandTotal - limitProductsOnPage; i < grandTotal; i++) {
+                $('#pizza-products .count-product:eq(' + i + ')').show();
+            }
+            $('.pagination li.current-page:eq('+ (currentActivePage - 1) +')').addClass('active-page')
+        }
+    })
+})
 /*
 Fixed basket
 */
@@ -41,6 +108,9 @@ $(document).ready(function () {
         }
     });
 });
+
+{/* 
+<li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li> */}
 
 function changeSelectRadioButton(index){
     const product = $('#product-' + index);

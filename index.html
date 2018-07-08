@@ -18,7 +18,7 @@
 <header class="mb-2">
     <nav id="menu-on-header" class="navbar navbar-expand-lg navbar-light for-header-navbar shadow-sm">
         <a class="navbar-brand" href="index.html">
-            <img src="img/img-for-all-page/Qiwi-logo.png" alt="logo" id="logo-on-page">
+            <img src="img/logo-qiwi/Qiwi-logo.png" alt="logo" id="logo-on-page">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,15 +120,18 @@
                 </div>
                 <div class="tab-content d-none" id="myTabContent">
                     <div class="tab-pane fade show active" id="pizza" role="tabpanel" aria-labelledby="pizza-tab">
-                        <div class="row justify-content-around">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination justify-content-center">
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                </ul>
-                            </nav>
+                        <div id="pizza-products" class="row justify-content-around">
                         </div>
+                        <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a id="previous-page" class="page-link" href="javascript:void(0)" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
                         <!-- inner from js -->
                     </div>
                     <div class="tab-pane fade" id="buggets" role="tabpanel" aria-labelledby="baguettes-tab">
@@ -180,7 +183,7 @@
 <div id="skelets_card_all_products" class="d-none">
  <!-- Skelet-card-pizza-and-salads -->
     <div id="skelet-general">
-        <div attr-id class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeIn">
+        <div attr-id class="col col-3 border-light-green-color m-2 shadow-sm text-center animated fadeIn count-product">
             <div class="row">
                 <div class="col-lg-12 size-heigth-h2 mt-2">
                     <h2 inner-name></h2>
