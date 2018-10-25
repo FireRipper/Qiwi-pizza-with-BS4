@@ -1,1 +1,1 @@
-# Qiwi-pizza-with-BS4
+# Site for ordering pizza, burgers and salads.
