@@ -1,0 +1,111 @@
+#payment-info {
+    background: url(../../img/img-for-all-page/Pizza-Callback-bg.jpg);
+}
+
+#payment-info img {
+    border-radius: 7px;
+    height: 255px;
+}
+
+#img-bank-card {
+    border-right: 0;
+    border-left: 0;
+}
+
+#img-bank-card img {
+    height: 85px;
+}
+
+#payment-info h3 {
+    color: #76b900;
+    text-shadow: -1px -1px #FFF,
+               -2px -2px #FFF,
+               -1px 1px #FFF,
+               -2px 2px #FFF,
+               1px 1px #FFF,
+               2px 2px #FFF,
+               1px -1px #FFF,
+               2px -2px #FFF,
+               -3px -3px 2px #BBB,
+               -3px 3px 2px #BBB,
+               3px 3px 2px #BBB,
+               3px -3px 2px #BBB;
+} 
+
+@media screen and (max-width: 1199px) {
+    #payment-info img {
+        height: 200px;
+    }
+    #payment-info h3 {
+        font-size: 18px;
+    }
+    #payment-info p {
+        font-size: 14px;
+    } 
+    #img-bank-card img {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #payment-info img {
+        height: 310px;
+    }
+    #img-bank-card img {
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #payment-info img {
+        height: 225px;
+    }
+    #img-bank-card img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 529px) {
+    #payment-info img {
+        height: 205px;
+    }
+    #img-bank-card img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    #payment-info img {
+        height: 155px;
+    } 
+    #img-bank-card img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #payment-info img {
+        height: 165px;
+    } 
+    #img-bank-card img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    #payment-info img {
+        height: 145px;
+    }
+    #img-bank-card img {
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #payment-info img {
+        height: 125px;
+    }
+    #img-bank-card img {
+        height: 38px;
+    }
+}

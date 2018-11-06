@@ -1,0 +1,71 @@
+.border-img {
+    border-radius: 10px;
+}
+
+#contact-info {
+    background: url(../../img/img-for-all-page/Pizza-Callback-bg.jpg) no-repeat;
+}
+
+#contact-info h2, h3 {
+    color: #76b900;
+    text-shadow: -1px -1px #FFF,
+               -2px -2px #FFF,
+               -1px 1px #FFF,
+               -2px 2px #FFF,
+               1px 1px #FFF,
+               2px 2px #FFF,
+               1px -1px #FFF,
+               2px -2px #FFF,
+               -3px -3px 2px #BBB,
+               -3px 3px 2px #BBB,
+               3px 3px 2px #BBB,
+               3px -3px 2px #BBB;
+}
+
+#contact-info h3, ul {
+    text-align: left;
+}
+
+#contact-info ul {
+    list-style-type: none;
+    padding: 1px;
+}
+
+@media screen and (max-width: 1199px) {
+    .border-img {
+        width: 695px;
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    .border-img {
+        width: 525px;
+    }    
+}
+
+@media screen and (max-width: 539px) {
+    .border-img {
+        width: 425px;
+    }
+    #contact-info h2, h3 {
+        font-size: 16px;
+    }    
+}
+
+@media screen and (max-width: 438px) {
+    .border-img {
+        width: 390px;
+    }    
+}
+
+@media screen and (max-width: 385px) {
+    .border-img {
+        width: 330px;
+    }    
+}
+
+@media screen and (max-width: 321px) {
+    .border-img {
+        width: 275px;
+    }    
+}
