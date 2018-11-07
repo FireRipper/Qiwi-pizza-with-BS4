@@ -1,7 +1,7 @@
 const offers = [
     {
-        "img_full": "img/pizza-img/pizza-img-full-size/burger-pizza-bg.png",
-        "img": "img/pizza-img/pizza-img-size-for-card/burger-pizza-bg-card.png",
+        "img_full": "static/img/pizza-img/pizza-img-full-size/burger-pizza-bg.png",
+        "img": "static/img/pizza-img/pizza-img-size-for-card/burger-pizza-bg-card.png",
         "name": "Бургер Пицца",
         "composition": "Фирменный соус, говяжий фарш, сыр моцарелла, маринованные огурчики, помидор",
         "category": "pizza",
@@ -12,8 +12,8 @@ const offers = [
         ]
     },
     {
-        "img_full": "img/pizza-img/pizza-img-full-size/kurinaya-pizza-bg.png",
-        "img": "img/pizza-img/pizza-img-size-for-card/kurinaya-pizza-bg-card.png",
+        "img_full": "static/img/pizza-img/pizza-img-full-size/kurinaya-pizza-bg.png",
+        "img": "static/img/pizza-img/pizza-img-size-for-card/kurinaya-pizza-bg-card.png",
         "name": "Куриная",
         "composition": "Цезарь соус, сыр моцарелла, куриное филе, помидоры, сладкий перец, шампиньоны",
         "category": "pizza",
@@ -24,8 +24,8 @@ const offers = [
         ]
     },
     {
-        "img_full": "img/pizza-img/pizza-img-full-size/masnaya-pizza-bg.png",
-        "img": "img/pizza-img/pizza-img-size-for-card/masnaya-pizza-bg-card.png",
+        "img_full": "static/img/pizza-img/pizza-img-full-size/masnaya-pizza-bg.png",
+        "img": "static/img/pizza-img/pizza-img-size-for-card/masnaya-pizza-bg-card.png",
         "name": "Мясная ",
         "composition": "Соус пилати, бекон, помидоры, сыр моцарелла, сладкий перец, говядина, ветчина, пепперони",
         "category": "pizza",
@@ -36,8 +36,8 @@ const offers = [
         ]
     },
     {
-        "img_full": "img/pizza-img/pizza-img-full-size/barbeku-pizza-bg.png",
-        "img": "img/pizza-img/pizza-img-size-for-card/barbeku-pizza-bg-card.png",
+        "img_full": "static/img/pizza-img/pizza-img-full-size/barbeku-pizza-bg.png",
+        "img": "static/img/pizza-img/pizza-img-size-for-card/barbeku-pizza-bg-card.png",
         "name": "Барбекю-Мясная",
         "composition": "Соус барбекю, говядина, сыр моцарелла, курица, сладкий перец, помидор",
         "category": "pizza",
@@ -48,8 +48,8 @@ const offers = [
         ]
     },
     {
-        "img_full": "img/pizza-img/pizza-img-full-size/chili-pizza-bg.png",
-        "img": "img/pizza-img/pizza-img-size-for-card/chili-pizza-bg-card.png",
+        "img_full": "static/img/pizza-img/pizza-img-full-size/chili-pizza-bg.png",
+        "img": "static/img/pizza-img/pizza-img-size-for-card/chili-pizza-bg-card.png",
         "name": "Чили",
         "composition": "Соус пилати, сыр моцарелла, говядина, маслины, халапеньо, колбаски пепперони",
         "category": "pizza",
@@ -60,8 +60,8 @@ const offers = [
         ]
     },
     {
-        "img_full": "img/pizza-img/pizza-img-full-size/4-cheese-pizza-bg.png",
-        "img": "img/pizza-img/pizza-img-size-for-card/4-cheese-pizza-bg-card.png",
+        "img_full": "static/img/pizza-img/pizza-img-full-size/4-cheese-pizza-bg.png",
+        "img": "static/img/pizza-img/pizza-img-size-for-card/4-cheese-pizza-bg-card.png",
         "name": "Четыре сыра",
         "composition": "Соус пилати, сыры: пармезан, маасдам, дор-блю, моцарелла",
         "category": "pizza",
@@ -72,8 +72,8 @@ const offers = [
         ]
     },
     {
-        "img_full": "img/pizza-img/pizza-img-full-size/gribnaya-pizza-bg.png",
-        "img": "img/pizza-img/pizza-img-size-for-card/gribnaya-pizza-bg-card.png",
+        "img_full": "static/img/pizza-img/pizza-img-full-size/gribnaya-pizza-bg.png",
+        "img": "static/img/pizza-img/pizza-img-size-for-card/gribnaya-pizza-bg-card.png",
         "name": "Грибная",
         "composition": "Цезарь соус, сыр моцарелла, чеснок, помидоры, шампиньоны",
         "category": "pizza",
@@ -84,8 +84,8 @@ const offers = [
         ]
     },
     {
-        "img_full": "img/pizza-img/pizza-img-full-size/peperonyy-pizza-bg.png",
-        "img": "img/pizza-img/pizza-img-size-for-card/peperonyy-pizza-bg-card.png",
+        "img_full": "static/img/pizza-img/pizza-img-full-size/peperonyy-pizza-bg.png",
+        "img": "static/img/pizza-img/pizza-img-size-for-card/peperonyy-pizza-bg-card.png",
         "name": "Пепперони",
         "composition": "Соус пилати, сыр моцарелла, сладкий перец, шампиньоны, колбаски пепперони",
         "category": "pizza",
@@ -96,8 +96,8 @@ const offers = [
         ]
     },
     {
-        "img_full": "img/pizza-img/pizza-img-full-size/gavayskaya-pizza-bg.png",
-        "img": "img/pizza-img/pizza-img-size-for-card/gavayskaya-pizza-bg-card.png",
+        "img_full": "static/img/pizza-img/pizza-img-full-size/gavayskaya-pizza-bg.png",
+        "img": "static/img/pizza-img/pizza-img-size-for-card/gavayskaya-pizza-bg-card.png",
         "name": "Гавайская",
         "composition": "Соус пилати, сыр моцарелла, ветчина, ананас",
         "category": "pizza",
@@ -109,14 +109,14 @@ const offers = [
     },
                                 /* Buggets*/
     {
-        "img": "img/buggets-img/buggets-img-size-for-card/with-chiken-bugget-bg-card.png",
+        "img": "static/img/buggets-img/buggets-img-size-for-card/with-chiken-bugget-bg-card.png",
         "name": "С курицей",
         "composition": "Багет, майонез, салат айсберг, сыр, помидоры, огурцы маринованные, филе курицы гриль",
         "category": "buggets",
         "price": 55,
     },
     {
-        "img": "img/buggets-img/buggets-img-size-for-card/with-buzhenina-bugget-bg-card.png",
+        "img": "static/img/buggets-img/buggets-img-size-for-card/with-buzhenina-bugget-bg-card.png",
         "name": "С бужениной",
         "composition": "Багет, буженина, сыр, кукуруза, помидор, майонез горчица.",
         "category": "buggets",
@@ -130,21 +130,21 @@ const offers = [
         "price": 43,
     },
     {
-        "img": "img/buggets-img/buggets-img-size-for-card/with-cheese-and-tomato-bugget-bg-card.png",
+        "img": "static/img/buggets-img/buggets-img-size-for-card/with-cheese-and-tomato-bugget-bg-card.png",
         "name": "С сыром и помидорами",
         "composition": "Багет, помидоры, сыр, зелень, майонез",
         "category": "buggets",
         "price": 30,
     },
     {
-        "img": "img/buggets-img/buggets-img-size-for-card/with-cheese-and-garlic-bugget-bg-card.png",
+        "img": "static/img/buggets-img/buggets-img-size-for-card/with-cheese-and-garlic-bugget-bg-card.png",
         "name": "С чесноком и сыром",
         "composition": "Багет, сыр, чеснок, масло, зелень, специи",
         "category": "buggets",
         "price": 28,
     },
     {
-        "img": "img/buggets-img/buggets-img-size-for-card/with-cheese-and-bacon-bugget-bg-card.png",
+        "img": "static/img/buggets-img/buggets-img-size-for-card/with-cheese-and-bacon-bugget-bg-card.png",
         "name": "С беконом и сыром",
         "composition": "Багет, майонез, твердый сыр, бекон, зеленый лук",
         "category": "buggets",
@@ -152,21 +152,21 @@ const offers = [
     },
                                     /* Set of */
     {
-        "img": "img/set-of-img/set-of-img-size-for-card/set-of-number-1-bg-card.png",
+        "img": "static/img/set-of-img/set-of-img-size-for-card/set-of-number-1-bg-card.png",
         "name": "Пицца сэт №1",
         "composition": "Мини Пицца \"Грибная\", мини Пицца \"Чили\", мини Пицца \"Мясная\"",
         "category": "set-of",
         "price": 295,
     },
     {
-        "img": "img/set-of-img/set-of-img-size-for-card/set-of-number-2-bg-card.png",
+        "img": "static/img/set-of-img/set-of-img-size-for-card/set-of-number-2-bg-card.png",
         "name": "Пицца сэт №2",
         "composition": "Мини Пицца \"Гавайская\", мини Пицца \"Барбекю-Мясная\", мини Пицца \"Четыре сыра\"",
         "category": "set-of",
         "price": 220,
     },
     {
-        "img": "img/set-of-img/set-of-img-size-for-card/set-of-number-3-bg-card.png",
+        "img": "static/img/set-of-img/set-of-img-size-for-card/set-of-number-3-bg-card.png",
         "name": "Пицца сэт №3",
         "composition": "Мини Пицца \"Пепперони\", мини Пицца \"Бургер Пицца\", мини Пицца \"Куриная\"",
         "category": "set-of",
@@ -174,7 +174,7 @@ const offers = [
     },
                                 /* Salads */
     {
-        "img": "img/salads-img/salads-img-size-for-card/with-telyatina-salad-bg-card.png",
+        "img": "static/img/salads-img/salads-img-size-for-card/with-telyatina-salad-bg-card.png",
         "name": "С телятиной",
         "composition": "Телятина, помидор, перец, лук крымский, салат, пекинская капуста",
         "category": "salads",
@@ -185,7 +185,7 @@ const offers = [
         ]
     },
     {
-        "img": "img/salads-img/salads-img-size-for-card/with-semga-salad-bg-card.png",
+        "img": "static/img/salads-img/salads-img-size-for-card/with-semga-salad-bg-card.png",
         "name": "С семгой",
         "composition": "Салат, помидор, огурец, семга, кунжут, соус унаги",
         "category": "salads",
@@ -196,7 +196,7 @@ const offers = [
         ]
     },
     {
-        "img": "img/salads-img/salads-img-size-for-card/grecheskiy-salad-bg-card.png",
+        "img": "static/img/salads-img/salads-img-size-for-card/grecheskiy-salad-bg-card.png",
         "name": "Греческий",
         "composition": "Салат, маслины, сыр \"Фета\", помидор, огурец, перец, масло оливковое",
         "category": "salads",
@@ -207,7 +207,7 @@ const offers = [
         ]
     },
     {
-        "img": "img/salads-img/salads-img-size-for-card/tsezar-with-chicken-salad-bg-card.png",
+        "img": "static/img/salads-img/salads-img-size-for-card/tsezar-with-chicken-salad-bg-card.png",
         "name": "Цезарь с курицой",
         "composition": "Салат, пекинская капуста, помидор, курица, соус",
         "category": "salads",
