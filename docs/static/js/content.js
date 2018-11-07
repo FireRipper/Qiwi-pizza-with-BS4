@@ -123,7 +123,7 @@ const offers = [
         "price": 40,
     },
     {
-        "img": "img/buggets-img/buggets-img-size-for-card/with-vetchina-bugget-bg-card.png",
+        "img": "static/img/buggets-img/buggets-img-size-for-card/with-vetchina-bugget-bg-card.png",
         "name": "С ветчиной",
         "composition": "Багет, майонез, сыр, ветчина, зелень, базилик",
         "category": "buggets",
@@ -218,7 +218,7 @@ const offers = [
         ]
     },
     {
-        "img": "img/salads-img/salads-img-size-for-card/ovoschnoj-salad-bg-card.png",
+        "img": "static/img/salads-img/salads-img-size-for-card/ovoschnoj-salad-bg-card.png",
         "name": "Овощной",
         "composition": "Перец, помидор, огурец, салат, пекинская капуста",
         "category": "salads",
